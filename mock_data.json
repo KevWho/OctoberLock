@@ -1,0 +1,83 @@
+{"Airbnb":
+  { "Corey_Hu" : {
+      "Start_Time": "2019-04-24",
+      "End_Time": "2019-04-29",
+      "Tot_Guests": 4,
+      "Entries": [ {
+          "TimeStamp" : "2019-04-24 13:00",
+          "NumGuests" : 5,
+          "Photo": "url"
+      }, {
+        "TimeStamp" : "2019-04-25 11:00",
+          "NumGuests" : 3,
+          "Photo": "url"
+      }, {
+        "TimeStamp" : "2019-04-26 1:00",
+          "NumGuests" : 2,
+          "Photo": "url"
+      }, {
+        "TimeStamp" : "2019-04-27 13:43",
+          "NumGuests" : 1,
+          "Photo": "url"
+      }, {
+        "TimeStamp" : "2019-04-29 19:00",
+          "NumGuests" : 9,
+          "Photo": "url"
+      }
+    ]
+  }, "Kevin_Hu" : {
+    "Start_Time": "2019-05-24",
+    "End_Time": "2019-05-27",
+    "Tot_Guests": 9,
+    "Entries": [ {
+        "TimeStamp" : "2019-05-24 8:27",
+        "NumGuests" : 5,
+        "Photo": "url"
+    }, {
+      "TimeStamp" : "2019-05-24 14:27",
+        "NumGuests" : 10,
+        "Photo": "url"
+    }, {
+      "TimeStamp" : "2019-05-24 18:27",
+        "NumGuests" : 7,
+        "Photo": "url"
+    }, {
+      "TimeStamp" : "2019-05-26 20:27",
+        "NumGuests" : 3,
+        "Photo": "url"
+    }, {
+      "TimeStamp" : "2019-05-27 7:27",
+        "NumGuests" : 7,
+        "Photo": "url"
+    }
+  ]
+}, "John_Doe" : {
+    "Start_Time": "2019-06-02",
+    "End_Time": "2019-06-03",
+    "Tot_Guests": 3,
+    "Entries": [ {
+        "TimeStamp" : "2019-06-02 13:00",
+        "NumGuests" :2,
+        "Photo": "url"
+    }, {
+      "TimeStamp" : "2019-06-02 15:00",
+        "NumGuests" : 3,
+        "Photo": "url"
+    }, {
+      "TimeStamp" : "2019-06-02 16:00",
+        "NumGuests" : 4,
+        "Photo": "url"
+    }, {
+      "TimeStamp" : "2019-06-02 17:00",
+        "NumGuests" : 5,
+        "Photo": "url"
+    }, {
+      "TimeStamp" : "2019-06-02 19:00",
+        "NumGuests" : 3,
+        "Photo": "url"
+    }
+  ]
+}
+}
+}
+
