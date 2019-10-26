@@ -207,7 +207,7 @@ def webhookLock():
 
     headers={'x-august-api-key': api_key,
              'x-august-access-token': token,
-             'content-type': 'application-json'}
+             'content-type': 'application/json'}
 
     body = {
       'url': "https://olock.kevin-hu.org/webhookResponse",
@@ -231,7 +231,7 @@ def webhook():
 
     headers={'x-august-api-key': api_key,
              'x-august-access-token': token,
-             'content-type': 'application-json'}
+             'content-type': 'application/json'}
 
     body = {
       'url': "https://olock.kevin-hu.org/webhookResponse",
