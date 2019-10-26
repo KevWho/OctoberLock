@@ -198,6 +198,30 @@ def webRTCBegin():
         
     return jsonify(returnjson.json())
 
+@app.route("/webhookLock", methods=["GET"])
+def webhookLock():
+    """Fetching a protected resource using an OAuth 2 token.
+    """
+
+    app.logger.debug('webhookLock: enter')
+
+    headers={'x-august-api-key': api_key,
+             'x-august-access-token': token,
+             'content-type': 'application-json'}
+
+    body = {
+      'url': "https://olock.kevin-hu.org/webhookResponse",
+      'clientID': client_id,
+      'header': "augustHeader",
+      'token': "headerSecret",
+      'method': "POST",
+      'notificationTypes': ['operation']
+    }
+
+    returnjson=requests.post(august_rest+'/webhook/11CE24327D5649E0BCC8E79AE3D15D1E', headers=headers, json=body)
+        
+    return jsonify(returnjson.json())
+
 @app.route("/webhook", methods=["GET"])
 def webhook():
     """Fetching a protected resource using an OAuth 2 token.
@@ -234,6 +258,21 @@ def webhookDelete():
              'content-type': 'application-json'}
 
     returnjson=requests.delete(august_rest+'/webhook/doorbell/32cdfb23111f/'+client_id, headers=headers)
+        
+    return jsonify(returnjson.json())
+
+@app.route("/webhookDeleteLock", methods=["GET"])
+def webhookDelete():
+    """Fetching a protected resource using an OAuth 2 token.
+    """
+
+    app.logger.debug('webhookDeleteLock: enter')
+
+    headers={'x-august-api-key': api_key,
+             'x-august-access-token': token,
+             'content-type': 'application-json'}
+
+    returnjson=requests.delete(august_rest+'/webhook/11CE24327D5649E0BCC8E79AE3D15D1E/'+client_id, headers=headers)
         
     return jsonify(returnjson.json())
 
