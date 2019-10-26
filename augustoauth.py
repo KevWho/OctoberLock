@@ -218,7 +218,7 @@ def webhook():
       'notificationTypes': ['videoavailable']
     }
 
-    returnjson=requests.push(august_rest+'/webhook/doorbell/32cdfb23111f', headers=headers, json=body)
+    returnjson=requests.post(august_rest+'/webhook/doorbell/32cdfb23111f', headers=headers, json=body)
         
     return jsonify(returnjson.json())
 
