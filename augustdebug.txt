@@ -876,3 +876,269 @@ DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.a
 DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "GET /doorbells/32cdfb23111f HTTP/1.1" 200 None
 INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 19:52:27] "GET /doorbell HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 19:55:51] "POST /webhookResponse HTTP/1.1" 200 -
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+INFO:werkzeug: * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 14:42:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 14:43:44] "POST /stay HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 14:44:12] "POST /stay HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+DEBUG:app:stayStart: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "POST /webhook/11CE24327D5649E0BCC8E79AE3D15D1E HTTP/1.1" 200 21
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 14:45:14] "POST /stay HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+INFO:werkzeug: * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+DEBUG:app:stayStart: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "POST /webhook/11CE24327D5649E0BCC8E79AE3D15D1E HTTP/1.1" 200 21
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 14:46:28] "POST /stay HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+DEBUG:app:stayStart: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "POST /webhook/11CE24327D5649E0BCC8E79AE3D15D1E HTTP/1.1" 200 21
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 14:46:59] "POST /stay HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+DEBUG:app:stayStart: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "POST /webhook/11CE24327D5649E0BCC8E79AE3D15D1E HTTP/1.1" 200 21
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 14:47:18] "POST /stay HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+DEBUG:app:stayStart: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "POST /webhook/11CE24327D5649E0BCC8E79AE3D15D1E HTTP/1.1" 200 21
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 14:48:03] "POST /stay HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+INFO:werkzeug: * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+DEBUG:app:stayStart: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "POST /webhook/11CE24327D5649E0BCC8E79AE3D15D1E HTTP/1.1" 200 21
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 14:48:18] "POST /stay HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+DEBUG:app:stayStart: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "POST /webhook/11CE24327D5649E0BCC8E79AE3D15D1E HTTP/1.1" 200 21
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 14:49:21] "POST /stay HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+INFO:werkzeug: * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+DEBUG:app:stayStart: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "POST /webhook/11CE24327D5649E0BCC8E79AE3D15D1E HTTP/1.1" 200 21
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "POST /webhook/doorbell/32cdfb23111f HTTP/1.1" 200 21
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 14:56:34] "POST /stay HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+INFO:werkzeug: * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
