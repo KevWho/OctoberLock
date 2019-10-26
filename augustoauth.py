@@ -234,7 +234,7 @@ def webhookDelete():
              'x-august-access-token': token,
              'content-type': 'application-json'}
 
-    returnjson=requests.delete(august_rest+'/webhook/doorbell/32cdfb23111f/'+client_id, headers=headers, json=body)
+    returnjson=requests.delete(august_rest+'/webhook/doorbell/32cdfb23111f/'+client_id, headers=headers)
         
     return jsonify(returnjson.json())
 
