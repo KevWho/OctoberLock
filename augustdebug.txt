@@ -625,3 +625,253 @@ INFO:werkzeug: * Restarting with stat
 DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 676-276-288
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+INFO:werkzeug: * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 163-530-465
+DEBUG:augustoauth:webhookDelete: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "DELETE /webhook/doorbell/32cdfb23111f/e06433f4-4bd2-40f6-8e73-d00ff7748420 HTTP/1.1" 200 21
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:18:23] "GET /webhookDelete HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookDelete: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "DELETE /webhook/doorbell/32cdfb23111f/e06433f4-4bd2-40f6-8e73-d00ff7748420 HTTP/1.1" 200 21
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:18:47] "GET /webhookDelete HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookLock: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "POST /webhook/11CE24327D5649E0BCC8E79AE3D15D1E HTTP/1.1" 200 21
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:18:50] "GET /webhookLock HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:19:00] "GET /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:19:28] "POST /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:19:30] "POST /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:19:30] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:19:32] "GET /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:19:33] "POST /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:19:35] "GET /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:19:35] "POST /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:19:38] "POST /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/opt/bitnami/apps/OctoberLock/htdocs/augustoauth.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 163-530-465
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:21:55] "GET /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:22:03] "POST /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:22:07] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:22:10] "GET /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:22:18] "POST /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:22:24] "GET /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:22:25] "POST /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:22:28] "POST /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:22:36] "POST /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:22:36] "GET /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:22:39] "POST /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:22:51] "GET /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:22:51] "POST /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:22:54] "POST /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:27:26] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:27:31] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:27:31] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:27:38] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:27:42] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:29:06] "GET /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:29:11] "POST /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:29:31] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:29:39] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhook: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "POST /webhook/doorbell/32cdfb23111f HTTP/1.1" 200 21
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:29:56] "GET /webhook HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:30:01] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:30:04] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:30:06] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:30:11] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:30:12] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:30:13] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:30:15] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:30:16] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:30:17] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:30:18] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:30:19] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:30:20] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:30:21] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:30:22] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:30:23] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:30:56] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:31:55] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:31:57] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:32:28] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:32:35] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:32:37] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:32:37] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:32:44] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:32:45] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:32:50] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:32:51] "GET /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:33:00] "POST /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:33:04] "GET /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:33:11] "POST /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:33:11] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:34:38] "GET /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:34:46] "POST /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:34:47] "POST /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:34:50] "GET /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:34:57] "POST /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:35:02] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:35:05] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:35:06] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:doorbell: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "GET /doorbells/32cdfb23111f HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:35:20] "GET /doorbell HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:35:21] "POST /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:35:58] "GET /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:36:42] "POST /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:39:45] "GET /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:40:00] "POST /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:40:01] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:41:38] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:42:16] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:42:27] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:42:29] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:42:31] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:42:36] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:42:39] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:42:41] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:42:42] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:42:43] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:42:44] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:doorbell: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "GET /doorbells/32cdfb23111f HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:42:47] "GET /doorbell HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:43:02] "POST /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:43:10] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:50:30] "GET /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/opt/bitnami/apps/OctoberLock/htdocs/augustoauth.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+INFO:werkzeug: * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 163-530-465
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:52:36] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:doorbellVideo: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "GET /webhook/11CE24327D5649E0BCC8E79AE3D15D1E/videoevent?dvrID=e82fd4e3-6649-4a0b-96f6-2ed189f80cdc HTTP/1.1" 405 58
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:52:53] "GET /doorbellVideo?dvrID=e82fd4e3-6649-4a0b-96f6-2ed189f80cdc HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:54:34] "POST /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:55:39] "POST /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:55:42] "POST /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:55:42] "POST /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/opt/bitnami/apps/OctoberLock/htdocs/augustoauth.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 163-530-465
+DEBUG:augustoauth:doorbellVideo: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "GET /doorbells/32cdfb23111f/videoevent?dvrID=e82fd4e3-6649-4a0b-96f6-2ed189f80cdc HTTP/1.1" 200 178
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:56:03] "GET /doorbellVideo?dvrID=e82fd4e3-6649-4a0b-96f6-2ed189f80cdc HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 19:14:10] "POST /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 19:15:50] "POST /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 19:21:01] "POST /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 19:21:52] "POST /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 19:23:04] "POST /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:doorbell: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "GET /doorbells/32cdfb23111f HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 19:24:55] "GET /doorbell HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 19:25:14] "POST /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 19:25:32] "POST /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 19:27:06] "POST /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 19:29:54] "POST /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 19:32:06] "POST /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 19:34:06] "POST /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 19:34:42] "POST /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 19:35:16] "POST /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 19:42:53] "POST /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 19:48:30] "POST /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:profile: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "GET /users/me HTTP/1.1" 200 284
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "GET /users/locks/mine HTTP/1.1" 200 193
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 19:52:02] "GET /profile HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 19:52:03] "GET /favicon.ico HTTP/1.1" 404 -
+DEBUG:augustoauth:doorbell: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "GET /doorbells/32cdfb23111f HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 19:52:27] "GET /doorbell HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 19:55:51] "POST /webhookResponse HTTP/1.1" 200 -
