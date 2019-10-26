@@ -302,7 +302,7 @@ def webhookResponseSave():
     return jsonify(data), 200
 
 @app.route("/doorbellVideo", methods=["GET"])
-def webhookDeleteLock():
+def webhookDoorbellVideo():
     """Fetching a protected resource using an OAuth 2 token.
     """
 
