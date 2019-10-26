@@ -58,16 +58,25 @@ def info():
     return "OctoberLock backend API"
 
 
+@app.route("/test", methods=["GET"])
+def test():
+    stayAdd('test', 0)
+    return jsonify(success), 200
+
 ########
 # Stay #
 ########
 
-def stayStart():
+def stayStart(id):
     app.logger.debug('stayStart: enter')
 
     # TODO: Check if important devices (lock, doorbell, bridge?) online
 
-    # TODO: Update startTime in json
+    data = loadDataFile().json
+    if data == failure:
+        return jsonify(failure)
+    data['Airbnb'][id]['Start_Time'] = '2019' # TODO: Fixme
+    writeDataFile(data)
 
     # Setup webhook for lock
     body = {
@@ -85,10 +94,14 @@ def stayStart():
     return jsonify(success)
 
 
-def stayEnd():
+def stayEnd(id):
     app.logger.debug('stayEnd: enter')
 
-    # TODO: Update endTIme in json
+    data = loadDataFile().json
+    if data == failure:
+        return jsonify(failure)
+    data['Airbnb'][id]['End_Time'] = '2019' # TODO: Fixme
+    writeDataFile(data)
 
     # Delete webhook for lock
     response = requests.delete(august_rest+'/webhook/'+lock_id+'/'+client_id, headers=headers).json()
@@ -98,25 +111,46 @@ def stayEnd():
     # Delete webhook for doorbell
     return cameraEnd()
 
+def stayAdd(id, guestNum):
+    data = loadDataFile().json
+    if data == failure:
+        return jsonify(failure)
+    data['Airbnb'][id] = {
+        'Start_Time': 'Present',
+        'End_Time': 'Present',
+        'Tot_Guests': guestNum,
+        'Entries': []
+      }
+    writeDataFile(data)
+    return jsonify(success)
+
 # Start or end stay, verify devices online
-# Pass in {'type' = 'start'} or {'type' = 'end'}
+# Pass in {'type':'start', 'id': 'ID', 'guestNum': INT} 
+# or {'type': 'end', 'id': 'ID', 'guestNum': INT}
+# or {'type': 'add', 'id': 'ID', 'guestNum': INT}
 @app.route("/stay", methods=["POST"])
 def stay():
     data = success
     req = request.json
-    if req and 'type' in req:
-        if req['type'] == 'start':
-            returnjson = stayStart()
-            if returnjson.json != success:
-                return returnjson
-        elif req['type'] == 'end':
-            returnjson = stayEnd()
-            if returnjson.json != success:
-                return returnjson
-        else:
-            data = {'response': 'Error', 'msg': 'type must be "start" or "end"'}
+    if not req:
+        return jsonify({'response': 'Error', 'msg': 'no POST data'}), 200
+    for key in ['type', 'id', 'guestNum']:
+        if key not in req:
+            return jsonify({'response': 'Error', 'msg': key+' undefined'}), 200
+    if req['type'] == 'start':
+        returnjson = stayStart(req['id'])
+        if returnjson.json != success:
+            return returnjson
+    elif req['type'] == 'end':
+        returnjson = stayEnd(req['id'])
+        if returnjson.json != success:
+            return returnjson
+    elif req['type'] == 'add':
+        returnjson = stayAdd(req['id'], req['guestNum'])
+        if returnjson.json != success:
+            return returnjson
     else:
-        data = {'response': 'Error', 'msg': 'type undefined'}
+        data = {'response': 'Error', 'msg': 'type must be "start" or "end" or "add"'}
     return jsonify(data), 200
 
 
@@ -164,20 +198,40 @@ def lockResponse():
     return jsonify(success), 200
 
 #Handle doorbell events
-webhookResponses = []
 @app.route("/doorbellResponse", methods=["POST"])
 def doorbellResponse():
-    webhookResponses = []
-    return jsonify(success), 200
+    pass
 
 
 ##################
 # Data Retreival #
 ##################
 
+def initDataFile():
+    data =  { "Airbnb": {} }
+    writeDataFile(data)
+
+def loadDataFile():
+    if not os.path.exists(data_path):
+        initDataFile()
+    try:
+        with open(data_path) as f:
+            data = json.load(f)
+        f.close()
+        return jsonify(data)
+    except:
+        return jsonify(failure)
+
+def writeDataFile(data):
+    with open(data_path, "w+") as f:
+        json.dump(data, f)
+    f.close()
+
 # Serves data file
 @app.route("/data.json", methods=["GET"])
 def data():
+    if not os.path.exists(data_path):
+        initDataFile()
     return send_from_directory('.', data_path)
 
 
