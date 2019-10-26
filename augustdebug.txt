@@ -626,6 +626,7 @@ DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 676-276-288
 DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+<<<<<<< HEAD
 INFO:werkzeug: * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
 INFO:werkzeug: * Restarting with stat
 DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
