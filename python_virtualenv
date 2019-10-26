@@ -1,3 +1,4 @@
 #!/bin/bash
 source flaskenv/bin/activate
+export GOOGLE_APPLICATION_CREDENTIALS="vision/OctoberLock-aca448a7492a.json"
 flaskenv/bin/python3 $@
