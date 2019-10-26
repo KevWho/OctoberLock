@@ -160,8 +160,6 @@ def house():
              'x-august-access-token': token,
              'content-type': 'application-json'}
 
-    specificlock = request.args.get('LockID',False)
-
     returnjson=requests.get(august_rest+'/houses/d7bfbd74-9314-4220-a952-b585035d5869', headers=headers)
         
     return jsonify(returnjson.json())
@@ -171,40 +169,87 @@ def doorbell():
     """Fetching a protected resource using an OAuth 2 token.
     """
 
-    app.logger.debug('house: enter')
+    app.logger.debug('doorbell: enter')
 
     headers={'x-august-api-key': api_key,
              'x-august-access-token': token,
              'content-type': 'application-json'}
 
-    specificlock = request.args.get('LockID',False)
-
     returnjson=requests.get(august_rest+'/doorbells/32cdfb23111f', headers=headers)
         
     return jsonify(returnjson.json())
 
-@app.route("/ping", methods=["GET"])
-def ping():
+@app.route("/webRTCBegin", methods=["GET"])
+def webRTCBegin():
     """Fetching a protected resource using an OAuth 2 token.
     """
 
-    app.logger.debug('ping: enter')
+    app.logger.debug('webRTCBegin: enter')
 
     headers={'x-august-api-key': api_key,
+             'x-august-access-token': token,
              'content-type': 'application-json'}
 
-#             'x-august-access-token': session['oauth_token'],
-
-    
-    returnjson=requests.get(august_rest+'/ping', headers=headers)
-    
+    body = {
+      'offer': "[sdp offer goes here]",
+      'clientTransactionID': 'webRTCTestCall'
+    }
+    returnjson=requests.post(august_rest+'/doorbells/32cdfb23111f', headers=headers, json=body)
+        
     return jsonify(returnjson.json())
 
-@app.route("/hello", methods=["GET"])
-def hello():
-    """Just prints Hello. Way to test if this server is up and reachable.
+@app.route("/webhook", methods=["GET"])
+def webhook():
+    """Fetching a protected resource using an OAuth 2 token.
     """
-    return "Hello."
+
+    app.logger.debug('webhook: enter')
+
+    headers={'x-august-api-key': api_key,
+             'x-august-access-token': token,
+             'content-type': 'application-json'}
+
+    body = {
+      'url': "",
+      'clientID': client_id,
+      'header': "augustHeader",
+      'token': "headerSecret",
+      'method': "POST",
+      'notificationTypes': ['videoavailable']
+    }
+
+    returnjson=requests.post(august_rest+'/webhook/doorbell/32cdfb23111f', headers=headers, json=body)
+        
+    return jsonify(returnjson.json())
+
+@app.route("/webhookDelete", methods=["GET"])
+def webhookDelete():
+    """Fetching a protected resource using an OAuth 2 token.
+    """
+
+    app.logger.debug('webhookDelete: enter')
+
+    headers={'x-august-api-key': api_key,
+             'x-august-access-token': token,
+             'content-type': 'application-json'}
+
+    returnjson=requests.delete(august_rest+'/webhook/doorbell/32cdfb23111f', headers=headers, json=body)
+        
+    return jsonify(returnjson.json())
+
+webhookResponses = []
+@app.route("/webhookResponse", methods=["GET", "POST"])
+def webhookResponse():
+    if request.method == "GET":
+        app.logger.debug('webhookResponse-GET: enter')
+        return jsonify({ 'responses': webhookResponses})
+
+    if request.method == "POST":
+        webhookResponses.append(request.form)
+        data = {'response': 'Success'}
+        return jsonify(data), 200
+
+    
 
 if __name__ == "__main__":
     # This allows us to use a plain HTTP callback

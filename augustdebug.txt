@@ -358,3 +358,199 @@ DEBUG:augustoauth:house: enter
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
 DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "GET /doorbells/32cdfb23111f HTTP/1.1" 200 None
 INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 00:31:30] "GET /doorbell HTTP/1.1" 200 -
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+DEBUG:augustoauth:house: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "GET /doorbells/32cdfb23111f/webrtc HTTP/1.1" 405 58
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 00:35:42] "GET /doorbell HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/augustoauth.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/augustoauth.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/augustoauth.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+DEBUG:augustoauth:house: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "POST /doorbells/32cdfb23111f/webrtc/begin HTTP/1.1" 404 91
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 00:36:28] "GET /doorbell HTTP/1.1" 200 -
+DEBUG:augustoauth:house: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "POST /doorbells/32cdfb23111f/webrtc/begin HTTP/1.1" 404 91
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 00:36:29] "GET /doorbell HTTP/1.1" 200 -
+DEBUG:augustoauth:house: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "POST /doorbells/32cdfb23111f/webrtc/begin HTTP/1.1" 404 91
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 00:36:30] "GET /doorbell HTTP/1.1" 200 -
+DEBUG:augustoauth:house: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "POST /doorbells/32cdfb23111f/webrtc/begin HTTP/1.1" 404 91
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 00:36:31] "GET /doorbell HTTP/1.1" 200 -
+DEBUG:augustoauth:house: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "POST /doorbells/32cdfb23111f/webrtc/begin HTTP/1.1" 404 91
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 00:36:31] "GET /doorbell HTTP/1.1" 200 -
+DEBUG:augustoauth:house: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "POST /doorbells/32cdfb23111f/webrtc/begin HTTP/1.1" 404 91
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 00:36:31] "GET /doorbell HTTP/1.1" 200 -
+DEBUG:augustoauth:house: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "POST /doorbells/32cdfb23111f/webrtc/begin HTTP/1.1" 404 91
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 00:36:32] "GET /doorbell HTTP/1.1" 200 -
+DEBUG:augustoauth:house: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "POST /doorbells/32cdfb23111f/webrtc/begin HTTP/1.1" 404 91
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 00:36:32] "GET /doorbell HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/augustoauth.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+DEBUG:augustoauth:house: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "GET /doorbells/32cdfb23111f HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 00:43:44] "GET /doorbell HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/augustoauth.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/augustoauth.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/augustoauth.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/augustoauth.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/augustoauth.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 01:15:36] "GET /webrtcbegin HTTP/1.1" 404 -
+DEBUG:augustoauth:webRTCBegin: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 01:15:42] "GET /webRTCBegin HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 01:15:42] "GET /webRTCBegin?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 01:15:42] "GET /webRTCBegin?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 01:15:42] "GET /webRTCBegin?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 01:15:43] "GET /webRTCBegin?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 01:15:43] "GET /webRTCBegin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 01:15:43] "GET /webRTCBegin?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/augustoauth.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/augustoauth.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 01:16:52] "POST /webhookResponse HTTP/1.1" 500 -
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/augustoauth.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/augustoauth.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 01:18:29] "POST /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 01:18:40] "GET /webhookResponse HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 01:18:40] "GET /webhookResponse?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 01:18:40] "GET /webhookResponse?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 01:18:40] "GET /webhookResponse?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 01:18:40] "GET /webhookResponse?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 01:18:41] "GET /webhookResponse?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 01:18:41] "GET /webhookResponse?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/augustoauth.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/augustoauth.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 01:19:17] "GET /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 01:19:33] "POST /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 01:19:35] "GET /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/augustoauth.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 01:19:54] "POST /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 01:19:56] "GET /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 01:19:57] "GET /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 01:19:59] "POST /webhookResponse HTTP/1.1" 200 -
+DEBUG:augustoauth:webhookResponse-GET: enter
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 01:20:01] "GET /webhookResponse HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/augustoauth.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
