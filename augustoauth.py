@@ -149,6 +149,40 @@ def profile():
         
     return jsonify(myinfo)
 
+@app.route("/house", methods=["GET"])
+def house():
+    """Fetching a protected resource using an OAuth 2 token.
+    """
+
+    app.logger.debug('house: enter')
+
+    headers={'x-august-api-key': api_key,
+             'x-august-access-token': token,
+             'content-type': 'application-json'}
+
+    specificlock = request.args.get('LockID',False)
+
+    returnjson=requests.get(august_rest+'/houses/d7bfbd74-9314-4220-a952-b585035d5869', headers=headers)
+        
+    return jsonify(returnjson.json())
+
+@app.route("/doorbell", methods=["GET"])
+def doorbell():
+    """Fetching a protected resource using an OAuth 2 token.
+    """
+
+    app.logger.debug('house: enter')
+
+    headers={'x-august-api-key': api_key,
+             'x-august-access-token': token,
+             'content-type': 'application-json'}
+
+    specificlock = request.args.get('LockID',False)
+
+    returnjson=requests.get(august_rest+'/doorbells/32cdfb23111f', headers=headers)
+        
+    return jsonify(returnjson.json())
+
 @app.route("/ping", methods=["GET"])
 def ping():
     """Fetching a protected resource using an OAuth 2 token.
