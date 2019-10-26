@@ -218,10 +218,9 @@ def webhook():
       'notificationTypes': ['videoavailable']
     }
 
-    returnjson=requests.get(august_rest+'/webhook/doorbell/32cdfb23111f', headers=headers, json=body).json()
-    returnjson['clientID'] = client_id
+    returnjson=requests.push(august_rest+'/webhook/doorbell/32cdfb23111f', headers=headers, json=body)
         
-    return jsonify(returnjson)
+    return jsonify(returnjson.json())
 
 @app.route("/webhookDelete", methods=["GET"])
 def webhookDelete():
