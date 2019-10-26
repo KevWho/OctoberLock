@@ -284,7 +284,7 @@ def webhookResponse():
         return jsonify({ 'responses': webhookResponses})
 
     if request.method == "POST":
-        webhookResponses.append(request.form)
+        webhookResponses.append(request.json)
         data = {'response': 'Success'}
         return jsonify(data), 200
 
