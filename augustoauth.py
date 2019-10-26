@@ -210,7 +210,7 @@ def webhook():
              'content-type': 'application-json'}
 
     body = {
-      'url': "",
+      'url': "https://olock.kevin-hu.org/webhookResponse",
       'clientID': client_id,
       'header': "augustHeader",
       'token': "headerSecret",
@@ -248,8 +248,6 @@ def webhookResponse():
         webhookResponses.append(request.form)
         data = {'response': 'Success'}
         return jsonify(data), 200
-
-    
 
 if __name__ == "__main__":
     # This allows us to use a plain HTTP callback
