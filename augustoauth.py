@@ -312,7 +312,7 @@ def webhookDoorbellVideo():
              'x-august-access-token': token,
              'content-type': 'application-json'}
 
-    returnjson=requests.get(august_rest+'/webhook/11CE24327D5649E0BCC8E79AE3D15D1E/videoevent', headers=headers, params=request.args)
+    returnjson=requests.get(august_rest+'/doorbells/32cdfb23111f/videoevent', headers=headers, params=request.args)
         
     return jsonify(returnjson.json())
 
