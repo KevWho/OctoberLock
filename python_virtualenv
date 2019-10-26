@@ -1,0 +1,3 @@
+#!/bin/bash
+source flaskenv/bin/activate
+flaskenv/bin/python3 $@

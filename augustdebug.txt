@@ -554,3 +554,39 @@ INFO:werkzeug: * Restarting with stat
 DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 676-276-288
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 203-158-797
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 113-892-961
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 163-530-465
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+INFO:werkzeug: * Detected change in '/opt/bitnami/apps/OctoberLock/htdocs/augustoauth.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 163-530-465
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+INFO:werkzeug: * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 163-530-465
+DEBUG:augustoauth:profile: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "GET /users/me HTTP/1.1" 200 284
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "GET /users/locks/mine HTTP/1.1" 200 394
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 09:36:35] "GET /profile HTTP/1.1" 200 -

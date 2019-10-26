@@ -270,4 +270,4 @@ if __name__ == "__main__":
     #app.run(host='0.0.0.0')
     # This mode enables a debugger and will auto-reload any new code changes.
     # Using the debugger requires entering a PIN found in "augustdebug.txt".
-    app.run(host='0.0.0.0', port='8080', debug=True)
+    app.run(host='0.0.0.0', port='8888', debug=True)
