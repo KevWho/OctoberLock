@@ -288,6 +288,34 @@ def webhookResponse():
         data = {'response': 'Success'}
         return jsonify(data), 200
 
+@app.route("/webhookResponseClear", methods=["GET"])
+def webhookResponseClear():
+    webhookResponses = []
+    data = {'response': 'Success'}
+    return jsonify(data), 200
+
+@app.route("/webhookResponseSave", methods=["GET"])
+def webhookResponseSave():
+    # TODO
+
+    data = {'response': 'Success'}
+    return jsonify(data), 200
+
+@app.route("/doorbellVideo", methods=["GET"])
+def webhookDeleteLock():
+    """Fetching a protected resource using an OAuth 2 token.
+    """
+
+    app.logger.debug('doorbellVideo: enter')
+
+    headers={'x-august-api-key': api_key,
+             'x-august-access-token': token,
+             'content-type': 'application-json'}
+
+    returnjson=requests.get(august_rest+'/webhook/11CE24327D5649E0BCC8E79AE3D15D1E/videoevent', headers=headers, params=request.args)
+        
+    return jsonify(returnjson.json())
+
 if __name__ == "__main__":
     # This allows us to use a plain HTTP callback
     os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
