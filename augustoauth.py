@@ -262,7 +262,7 @@ def webhookDelete():
     return jsonify(returnjson.json())
 
 @app.route("/webhookDeleteLock", methods=["GET"])
-def webhookDelete():
+def webhookDeleteLock():
     """Fetching a protected resource using an OAuth 2 token.
     """
 
