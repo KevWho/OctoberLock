@@ -1,4 +1,4 @@
-from flask import Flask, request, redirect, session, url_for
+from flask import Flask, request, redirect, session, url_for, send_from_directory
 from flask.json import jsonify
 from flask import json
 from pprint import pformat
@@ -9,7 +9,7 @@ from urllib.parse import urlparse
 import logging
 import os
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='')
 
 # This information is obtained upon registration of a new OAuth
 # application with August
@@ -41,6 +41,9 @@ headers = {'x-august-api-key': api_key,
 # Server url
 server_url = 'https://olock.kevin-hu.org'
 
+# Data filepath
+data_path = 'data.json'
+
 # Constants
 success = {'response': 'Success'}
 failure = {'response': 'Failure'}
@@ -55,10 +58,17 @@ def info():
     return "OctoberLock backend API"
 
 
+########
+# Stay #
+########
+
 def stayStart():
     app.logger.debug('stayStart: enter')
 
-    # TODO: Check if important devices online
+    # TODO: Check if important devices (lock, doorbell, bridge?) online
+
+    # TODO: Update startTime in json
+
     # Setup webhook for lock
     body = {
       'url': server_url+'/lockResponse',
@@ -72,37 +82,21 @@ def stayStart():
     response = requests.post(august_rest+'/webhook/'+lock_id, headers=headers, json=body).json()
     if not augustSuccess(response):
         return jsonify(response)
-
-    # Setup webhook for doorbell
-    body = {
-      'url': server_url+'/webhookResponse',
-      'clientID': client_id,
-      'header': "augustHeader",
-      'token': "doorbellSecret",
-      'method': "POST",
-      'notificationTypes': ['videoavailable']
-    }
-
-    response = requests.post(august_rest+'/webhook/doorbell/'+doorbell_id, headers=headers, json=body).json()
-    if not augustSuccess(response):
-        return jsonify(response)
-
     return jsonify(success)
 
 
 def stayEnd():
     app.logger.debug('stayEnd: enter')
-    # Delete webhook for doorbell
-    response = requests.delete(august_rest+'/webhook/doorbell/'+doorbell_id+'/'+client_id, headers=headers).json()
-    if not augustSuccess(response):
-        return jsonify(response)
+
+    # TODO: Update endTIme in json
 
     # Delete webhook for lock
     response = requests.delete(august_rest+'/webhook/'+lock_id+'/'+client_id, headers=headers).json()
     if not augustSuccess(response):
         return jsonify(response)
-        
-    return jsonify(success)
+
+    # Delete webhook for doorbell
+    return cameraEnd()
 
 # Start or end stay, verify devices online
 # Pass in {'type' = 'start'} or {'type' = 'end'}
@@ -126,13 +120,79 @@ def stay():
     return jsonify(data), 200
 
 
-# Handle events
-webhookResponses = []
+##################
+# Event Handling #
+##################
+
+def cameraStart():
+    # Setup webhook for doorbell
+    body = {
+      'url': server_url+'/doorbellResponse',
+      'clientID': client_id,
+      'header': "augustHeader",
+      'token': "doorbellSecret",
+      'method': "POST",
+      'notificationTypes': ['videoavailable']
+    }
+
+    response = requests.post(august_rest+'/webhook/doorbell/'+doorbell_id, headers=headers, json=body).json()
+    if not augustSuccess(response):
+        return jsonify(response)
+    return jsonify(success)
+
+def cameraEnd():
+    # Delete webhook for doorbell
+    response = requests.delete(august_rest+'/webhook/doorbell/'+doorbell_id+'/'+client_id, headers=headers).json()
+    if not augustSuccess(response):
+        return jsonify(response)
+    return jsonify(success)
+
+# Handle lock events
 @app.route("/lockResponse", methods=["POST"])
 def lockResponse():
+    req = request.json
+    if req:
+        if 'EventType' in req and req['EventType'] == 'status':
+            if 'Event' in req and req['Event'] == 'unlock':
+                returnjson = cameraStart()
+                if returnjson.json != success:
+                    return returnjson
+            else:
+                returnjson = cameraEnd()
+                if returnjson.json != success:
+                    return returnjson
+    return jsonify(success), 200
+
+#Handle doorbell events
+webhookResponses = []
+@app.route("/doorbellResponse", methods=["POST"])
+def doorbellResponse():
     webhookResponses = []
     return jsonify(success), 200
 
+
+##################
+# Data Retreival #
+##################
+
+# Serves data file
+@app.route("/data.json", methods=["GET"])
+def data():
+    return send_from_directory('.', data_path)
+
+
+####################
+# Image Processing #
+####################
+
+# Processes jpg from doorbell and return # people entering
+def process():
+    return 0
+
+
+#######
+# App #
+#######
 
 if __name__ == "__main__":
     # This is a Flask thing, used to protect cookies in the session.
@@ -148,4 +208,4 @@ if __name__ == "__main__":
     #app.run(host='0.0.0.0')
     # This mode enables a debugger and will auto-reload any new code changes.
     # Using the debugger requires entering a PIN found in "augustdebug.txt".
-    app.run(host='0.0.0.0', port='8888', debug=True)
+    app.run(host='0.0.0.0', port='8888', debug=True, threaded=True)
