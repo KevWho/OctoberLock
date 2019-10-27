@@ -236,7 +236,7 @@ def doorbellResponse():
                 eventTime = dateFromInt(req['startTime'])
                 eventStr = dateToStr(eventTime, dateFormatMinute)
                 image = cameraImage()
-                numGuests = process(image)
+                numGuests, boxes = process(image)
 
                 app.logger.debug("Doorbell motion: time=%s image=%s num:%s" %
                      (eventStr, image, numGuests))
@@ -256,6 +256,7 @@ def doorbellResponse():
                             data['Airbnb'][id]['Entries'].append({
                                 'TimeStamp': eventStr,
                                 'NumGuests': numGuests,
+                                'Boxes': boxes,
                                 'Photo': image,
                                 'dvrID': req['dvrID'] if 'dvrID' in req else 'nan'
                               })
@@ -308,7 +309,7 @@ def data():
 def saveImage(imgurl):
     urllib.request.urlretrieve(imgurl, image_path)
 
-# Processes jpg from doorbell and return # people entering
+# Processes jpg from doorbell and return # people entering and array of bounding box dicts
 def process(imgurl):
     from google.cloud import vision
     client = vision.ImageAnnotatorClient()
@@ -324,12 +325,14 @@ def process(imgurl):
 
     num = len(objects)
     print('Number of objects found: {}'.format(num))
+    boxes = []
     for object_ in objects:
-        print('\n{} (confidence: {})'.format(object_.name, object_.score))
-        print('Normalized bounding polygon vertices: ')
-        for vertex in object_.bounding_poly.normalized_vertices:
-            print(' - ({}, {})'.format(vertex.x, vertex.y))
-    return num
+        boxes.append({
+            'obj': object_.name,
+            'confidence': object_.score,
+            'vertices' = [{'x': vertex.x, 'y': vertex.y} for vertex in object_.bounding_poly.normalized_vertices]
+            })
+    return num, boxes
 
 
 ##################

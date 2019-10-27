@@ -1898,3 +1898,29 @@ DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): oauth2.googleapi
 DEBUG:urllib3.connectionpool:https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
 DEBUG:app:Doorbell motion: time=2019-10-26_20:36 image=http://res.cloudinary.com/august-com/image/upload/v1572147372/ttt7ri2wxlyfiehqoph3.jpg num:1
 INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 20:37:01] "POST /doorbellResponse HTTP/1.1" 200 -
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+INFO:werkzeug: * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 21:18:17] "GET /data.json HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 21:18:59] "GET /data.json HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 21:19:33] "GET /data.json HTTP/1.1" 304 -
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/app.py', reloading
+INFO:werkzeug: * Restarting with stat
