@@ -11,6 +11,8 @@ import logging
 import os
 import io
 from datetime import datetime
+import matplotlib
+matplotlib.use('Agg')
 from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 import visualize_data
 

@@ -1,5 +1,6 @@
 import json
 import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 from PIL import Image
@@ -10,8 +11,6 @@ import mplcursors
 import pandas as pd
 import requests
 from io import BytesIO
-
-matplotlib.use('Agg')
 
 with open('data.json') as json_data:
     mock = json.load(json_data)
@@ -88,9 +87,9 @@ def stay(stay_id):
     ax.legend()
     #plt.show()
 
-    data = {'Time': time, 'Guests': guests, 'Urls': urls}
-    df = pd.DataFrame(data)
-    print(df)
+    #data = {'Time': time, 'Guests': guests, 'Urls': urls}
+    #df = pd.DataFrame(data)
+    #print(df)
     return fig
 
 def bounding(stay_id, entryNum):

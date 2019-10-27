@@ -2513,3 +2513,59 @@ INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 04:33:53] "GET /plot?id=Kevin3 HTTP/1.1
 INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 04:33:53] "GET /plot?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 04:33:55] "GET /plot?id=Kevin3 HTTP/1.1" 500 -
 INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 04:33:55] "GET /plot?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/opt/bitnami/apps/OctoberLock/htdocs/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 129-081-328
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 04:37:59] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 04:37:59] "GET /plot?id= HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 04:38:06] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 04:38:06] "GET /plot?id= HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 04:38:10] "GET /plot?id=Test HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 04:38:10] "GET /plot?id=Kevin3 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 04:38:42] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 04:38:42] "GET /plot?id= HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 04:38:51] "GET /plot?id= HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 04:38:51] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 04:38:58] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 04:39:07] "GET /responses HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/opt/bitnami/apps/OctoberLock/htdocs/visualize_data.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+INFO:werkzeug: * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 214-533-588
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 05:08:05] "GET /plot?id=Kevin3 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 05:08:05] "GET /plot?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 05:08:05] "GET /plot?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 05:08:05] "GET /plot?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 05:08:05] "GET /plot?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 05:08:06] "GET /plot?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+INFO:werkzeug: * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 214-533-588
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+INFO:werkzeug: * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 214-533-588
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 05:09:31] "GET /plot?id=Kevin3 HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 05:09:31] "GET /plot?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 05:09:31] "GET /plot?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 05:09:31] "GET /plot?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+INFO:werkzeug: * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 214-533-588
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/opt/bitnami/apps/OctoberLock/htdocs/flaskenv/local/lib/python3.4/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0 to DejaVu Sans ('/opt/bitnami/apps/OctoberLock/htdocs/flaskenv/local/lib/python3.4/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 05:10:21] "GET /plot?id=Kevin3 HTTP/1.1" 200 -
