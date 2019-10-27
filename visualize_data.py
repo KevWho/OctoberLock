@@ -1,10 +1,15 @@
 import json
 import matplotlib
 import matplotlib.pyplot as plt
+import matplotlib.patches as patches
+from PIL import Image
+import numpy as np
 import datetime
 from datetime import datetime, date, timedelta
 import mplcursors
 import pandas as pd
+import requests
+from io import BytesIO
 
 matplotlib.use('Agg')
 
@@ -88,6 +93,32 @@ def stay(stay_id):
     print(df)
     return fig
 
+def bounding(stay_id, entryNum):
+    entry = mock['Airbnb'][stay_id]['Entries'][entryNum]
+    print(entry)
+
+    response = requests.get(entry['Photo'])
+    im = np.array(Image.open(BytesIO(response.content)), dtype=np.uint8)
+    # Create figure and axes
+    fig,ax = plt.subplots(1)
+
+    # Display the image
+    ax.imshow(im)
+
+    x, y, _ = im.shape
+
+    # Create a Rectangle patch
+    for box in entry['Boxes']:
+        if box['obj'] == 'Person':
+            print(box['vertices'])
+            vertices = np.array([[y * coords['x'], x * coords['y']] for coords in box['vertices']])
+            rect = patches.Polygon(vertices,linewidth=1,edgecolor='r',facecolor='none')
+            # Add the patch to the Axes
+            ax.add_patch(rect)
+
+    plt.show()
+
+#bounding('Kevin3', 4)
 #stay("Kevin3")
 
 
