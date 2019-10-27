@@ -393,7 +393,7 @@ def process(imgurl):
 
 # Predefined date formats
 dateFormatDay = "%Y-%m-%d"
-dateFormatMinute = "%Y-%m-%d_%-H:%M"
+dateFormatMinute = "%Y-%m-%d_%H:%M"
 
 # Transforms str to date object
 def dateFromStr(dateStr, dateFormat, altFormat=dateFormatDay):
