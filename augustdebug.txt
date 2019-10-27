@@ -2461,3 +2461,18 @@ DEBUG:app:{'response': 'Success'}
 INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:19:12] "GET /stay?type=add&id=Test2&guestNum=02 HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:19:14] "GET /data HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:19:14] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug: * Detected change in '/opt/bitnami/apps/OctoberLock/htdocs/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+INFO:werkzeug: * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 214-533-588
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+INFO:werkzeug: * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 129-081-328
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 04:24:49] "GET /responses HTTP/1.1" 200 -
