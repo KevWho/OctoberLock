@@ -47,3 +47,52 @@ INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:40:26] "GET /data HTTP/1.1" 200 -
 DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
 DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
 DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+INFO:werkzeug: * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 331-135-281
+DEBUG:app:doorbellResponse: enter
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:45:47] "GET /responses HTTP/1.1" 200 -
+DEBUG:google.auth.transport.requests:Making request: POST https://oauth2.googleapis.com/token
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): oauth2.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+DEBUG:app:Doorbell motion: time=2019-10-27_08:45 image=http://res.cloudinary.com/august-com/image/upload/v1572191146/ftgnqnhvkogfarz3dvlt.jpg num:1
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:45:48] "POST /doorbellResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:46:09] "GET /responses HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:47:00] "GET /data HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:49:09] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:49:09] "GET /plot?id= HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:49:30] "GET /plot?id= HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:49:30] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:49:32] "GET /plot?id=Kevin HTTP/1.1" 304 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): res.cloudinary.com:80
+DEBUG:urllib3.connectionpool:http://res.cloudinary.com:80 "GET /august-com/image/upload/v1572190487/eyz5y7ffp4j9dmgpjtby.jpg HTTP/1.1" 200 26496
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/opt/bitnami/apps/OctoberLock/htdocs/flaskenv/local/lib/python3.4/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:49:38] "GET /bounding?id=Kevin&index=0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:49:43] "GET /plot?id=Kevin HTTP/1.1" 304 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): res.cloudinary.com:80
+DEBUG:urllib3.connectionpool:http://res.cloudinary.com:80 "GET /august-com/image/upload/v1572190600/ofxngsrgwhngi814ngil.jpg HTTP/1.1" 200 36414
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:49:44] "GET /bounding?id=Kevin&index=1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:49:49] "GET /plot?id=Kevin HTTP/1.1" 304 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): res.cloudinary.com:80
+DEBUG:urllib3.connectionpool:http://res.cloudinary.com:80 "GET /august-com/image/upload/v1572190663/ehugktpzk1jliin8jrzl.jpg HTTP/1.1" 200 30061
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:49:51] "GET /bounding?id=Kevin&index=2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:49:54] "GET /plot?id=Kevin HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:49:55] "GET /bounding?id=Kevin&index=4 HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): res.cloudinary.com:80
+DEBUG:urllib3.connectionpool:http://res.cloudinary.com:80 "GET /august-com/image/upload/v1572190765/cozkr5depcuab3lqgngn.jpg HTTP/1.1" 200 31425
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:49:59] "GET /bounding?id=Kevin&index=3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:50:19] "GET /plot?id=Kevin HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 09:01:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 09:01:06] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 09:01:45] "GET /plot?id=Kevin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 09:01:45] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 09:01:48] "GET /plot?id=Kevin HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 09:18:30] "GET /log HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 09:18:30] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 09:18:58] "GET /responses HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 09:18:58] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 09:34:03] "GET /data HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 09:34:04] "GET /favicon.ico HTTP/1.1" 404 -
