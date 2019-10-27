@@ -151,10 +151,13 @@ def stayAdd(id, guestNum):
 # Pass in {'type':'start', 'id': 'ID', 'guestNum': INT} 
 # or {'type': 'end', 'id': 'ID', 'guestNum': INT}
 # or {'type': 'add', 'id': 'ID', 'guestNum': INT}
-@app.route("/stay", methods=["POST"])
+@app.route("/stay", methods=["GET", "POST"])
 def stay():
     data = success
-    req = request.json
+    if request.method == "POST":
+        req = request.json
+    else:
+        req = request.args
     if not req:
         app.logger.debug('Error: no POST data')
         return jsonify({'response': 'Error', 'msg': 'no POST data'}), 200
