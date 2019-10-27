@@ -1,0 +1,140 @@
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=1add546d-e575-434f-b027-b481f25c2586 api_secret= auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+INFO:werkzeug: * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=1add546d-e575-434f-b027-b481f25c2586 api_secret= auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/augustoauth.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=1add546d-e575-434f-b027-b481f25c2586 api_secret= auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=1add546d-e575-434f-b027-b481f25c2586 api_secret= auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 22:55:19] "GET / HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 22:55:19] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 22:55:19] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 22:55:19] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 22:55:20] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 22:55:20] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 22:55:20] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=1add546d-e575-434f-b027-b481f25c2586 api_secret= auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=1add546d-e575-434f-b027-b481f25c2586 api_secret= auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:01:53] "GET / HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:01:53] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:01:53] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:01:53] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:01:53] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:01:53] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:01:53] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=1add546d-e575-434f-b027-b481f25c2586 api_secret= auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=1add546d-e575-434f-b027-b481f25c2586 api_secret= auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:16:05] "GET / HTTP/1.1" 302 -
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/augustoauth.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=1add546d-e575-434f-b027-b481f25c2586 api_secret= auth_callback=/hello auth_route=/hello debug_step=4
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=1add546d-e575-434f-b027-b481f25c2586 api_secret= auth_callback=/hello auth_route=/hello debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:18:04] "GET / HTTP/1.1" 302 -
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/augustoauth.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=1add546d-e575-434f-b027-b481f25c2586 api_secret= auth_callback=http://localhost:8080/hello auth_route=/hello debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=1add546d-e575-434f-b027-b481f25c2586 api_secret= auth_callback=http://localhost:8080/hello auth_route=/hello debug_step=4
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=1add546d-e575-434f-b027-b481f25c2586 api_secret= auth_callback=http://localhost:8080/hello auth_route=/hello debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:18:32] "GET / HTTP/1.1" 302 -
+DEBUG:augustoauth:callback: entered
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:19:19] "GET /hello HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:19:19] "GET /hello?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:19:19] "GET /hello?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:19:19] "GET /hello?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:19:20] "GET /hello?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:19:20] "GET /hello?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:19:20] "GET /hello?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+DEBUG:augustoauth:ping: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "GET /ping HTTP/1.1" 500 64
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:19:49] "GET /ping HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:19:49] "GET /favicon.ico HTTP/1.1" 404 -
+DEBUG:augustoauth:profile: enter
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:19:53] "GET /profile HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:19:53] "GET /profile?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:19:53] "GET /profile?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:19:53] "GET /profile?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:19:53] "GET /profile?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:19:54] "GET /profile?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:19:54] "GET /profile?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/augustoauth.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=1add546d-e575-434f-b027-b481f25c2586 api_secret= auth_callback=http://localhost:8080/callback auth_route=/callback debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+DEBUG:augustoauth:callback: entered
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:20:18] "GET /callback HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:20:18] "GET /callback?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:20:18] "GET /callback?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:20:18] "GET /callback?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:20:18] "GET /callback?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:20:18] "GET /callback?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:20:18] "GET /callback?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/augustoauth.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=1add546d-e575-434f-b027-b481f25c2586 api_secret= auth_callback=http://localhost:8080/callback auth_route=/callback debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=1add546d-e575-434f-b027-b481f25c2586 api_secret= auth_callback=http://localhost:8080/callback auth_route=/callback debug_step=4
+INFO:werkzeug: * Running on http://0.0.0.0:8080/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=1add546d-e575-434f-b027-b481f25c2586 api_secret= auth_callback=http://localhost:8080/callback auth_route=/callback debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+DEBUG:augustoauth:callback: entered
+DEBUG:augustoauth:callback: got code: None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): auth.august.com:443
+DEBUG:urllib3.connectionpool:https://auth.august.com:443 "POST /access_token HTTP/1.1" 400 None
+DEBUG:augustoauth:callback: made authpost
+DEBUG:augustoauth:response data: <Response [400]>
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:21:32] "GET /callback HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:21:32] "GET /callback?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:21:32] "GET /callback?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:21:32] "GET /callback?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:21:32] "GET /callback?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:21:32] "GET /callback?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:21:33] "GET /callback?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:21:39] "GET / HTTP/1.1" 302 -
+DEBUG:augustoauth:callback: entered
+DEBUG:augustoauth:callback: got code: None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): auth.august.com:443
+DEBUG:urllib3.connectionpool:https://auth.august.com:443 "POST /access_token HTTP/1.1" 400 None
+DEBUG:augustoauth:callback: made authpost
+DEBUG:augustoauth:response data: <Response [400]>
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:21:57] "GET /callback HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:21:57] "GET /callback?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:21:57] "GET /callback?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:21:57] "GET /callback?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:21:57] "GET /callback?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:21:57] "GET /callback?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/nivekuh/oauthrequests/augustoauth.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=1add546d-e575-434f-b027-b481f25c2586 api_secret=secret auth_callback=http://localhost:8080/callback auth_route=/callback debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
+ERROR:werkzeug:127.0.0.1 - - [25/Oct/2019 23:28:50] code 400, message Bad request version ('#U\x0e\x17\x86>ô>¤ß\x1ao6')
+INFO:werkzeug:127.0.0.1 - - [25/Oct/2019 23:28:50] "
