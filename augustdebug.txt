@@ -2192,3 +2192,10 @@ INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 00:13:53] "GET /data HTTP/1.1" 304 -
 INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 00:13:59] "GET /data HTTP/1.1" 304 -
 INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 00:14:11] "GET /data HTTP/1.1" 304 -
 INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 00:14:46] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 00:19:34] "GET /responses HTTP/1.1" 200 -
+DEBUG:app:doorbellResponse: enter
+DEBUG:google.auth.transport.requests:Making request: POST https://oauth2.googleapis.com/token
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): oauth2.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+DEBUG:app:Doorbell motion: time=2019-10-27_0:19 image=http://res.cloudinary.com/august-com/image/upload/v1572160784/ldofjiuvg4z9ipctxjsp.jpg num:0
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 00:19:46] "POST /doorbellResponse HTTP/1.1" 200 -
