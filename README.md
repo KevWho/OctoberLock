@@ -8,6 +8,8 @@ The webapp notes the building's approximate population over time by counting the
 
 ### Running ###
 
+You will need to have a Google Application Credentials plist file.
+
 An instance of the backend is running at https://olock.kevin-hu.org. You can run the backend api with:
 
 ```
