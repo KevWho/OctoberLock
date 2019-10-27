@@ -232,10 +232,6 @@ def doorbellResponse():
     if req:
         if 'EventType' in req and req['EventType'] == 'doorbell_video_upload_available':
             if 'startTime' in req:
-                data = loadDataFile().json
-                if data == failure:
-                    return jsonify(failure), 200
-
                 eventTime = dateFromInt(req['startTime'])
                 eventStr = dateToStr(eventTime, dateFormatMinute)
                 image = cameraImage()
@@ -244,6 +240,9 @@ def doorbellResponse():
                 app.logger.debug("Doorbell motion: time=%s image=%s num:%s" %
                      (eventStr, image, numGuests))
 
+                data = loadDataFile().json
+                if data == failure:
+                    return jsonify(failure), 200
                 for id in data['Airbnb']:
                     startStr = data['Airbnb'][id]['Start_Time']
                     endStr = data['Airbnb'][id]['End_Time']
