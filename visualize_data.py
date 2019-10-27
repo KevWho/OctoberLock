@@ -93,7 +93,7 @@ def stay(stay_id):
     return fig
 
 def bounding(stay_id, entryNum):
-    entry = mock['Airbnb'][stay_id]['Entries'][entryNum]
+    entry = mock['Airbnb'][stay_id]['Entries'][int(entryNum)]
     print(entry)
 
     response = requests.get(entry['Photo'])

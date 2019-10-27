@@ -274,7 +274,7 @@ export default function Dashboard() {
             {/* Chart */}
             <Grid item xs={12}>
               <Paper className={fixedHeightPaper}>
-                <img src={"https://olock.kevin-hu.org/plot?id="+stayName} />
+                <img src={"https://olock.kevin-hu.org/plot?id="+encodeURIComponent(stayName)} />
                 {/*<Chart />*/}
               </Paper>
             </Grid>
@@ -293,11 +293,11 @@ export default function Dashboard() {
                       </TableRow>
                     </TableHead>
                     <TableBody>
-                      {stay.Entries.map(entry => (
+                      {stay.Entries.map((entry, index) => (
                         <TableRow>
                           <TableCell>{entry.TimeStamp}</TableCell>
                           <TableCell>{entry.NumGuests}</TableCell>
-                          <TableCell><Link color="primary" href={entry.Photo}>Link</Link></TableCell>
+                          <TableCell><Link color="primary" href={"https://olock.kevin-hu.org/bounding?id="+encodeURIComponent(stayName)+"&index="+encodeURIComponent(index)}>Link</Link></TableCell>
                           <TableCell><Link color="primary" href={entry.Photo}>Link</Link></TableCell>
                         </TableRow>
                       ))}
