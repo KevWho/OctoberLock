@@ -63,7 +63,7 @@ def debug():
 
 # Log
 @app.route("/log", methods=["GET"])
-def debug():
+def log():
     return send_from_directory('.', 'augustdebug.txt', as_attachment=True, cache_timeout=0)
 
 # Check response.json() matches {'message': 'success'}
