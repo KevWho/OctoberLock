@@ -11,6 +11,7 @@ import os
 from datetime import datetime
 
 app = Flask(__name__, static_url_path='')
+app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
 # This information is obtained upon registration of a new OAuth
 # application with August
