@@ -2362,3 +2362,102 @@ INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:25:30] "GET /debug HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:25:36] "OPTIONS /stay HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:25:40] "GET /data HTTP/1.1" 304 -
 INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:25:42] "OPTIONS /stay HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/opt/bitnami/apps/OctoberLock/htdocs/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 381-979-517
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:35:44] "GET /data HTTP/1.1" 304 -
+DEBUG:app:stayStart: enter
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:35:48] "GET /stay?type=start&id=${stayName}&guestNum=0 HTTP/1.1" 500 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "GET /users/me HTTP/1.1" 200 284
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "GET /users/locks/mine HTTP/1.1" 200 193
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "GET /doorbells/32cdfb23111f HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:36:13] "GET /debug HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:37:13] "GET /data HTTP/1.1" 304 -
+DEBUG:app:stayStart: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "POST /webhook/11CE24327D5649E0BCC8E79AE3D15D1E HTTP/1.1" 200 21
+DEBUG:app:{'response': 'Success'}
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:37:16] "GET /stay?type=start&id=Kevin3&guestNum=0 HTTP/1.1" 200 -
+DEBUG:app:stayStart: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "POST /webhook/11CE24327D5649E0BCC8E79AE3D15D1E HTTP/1.1" 200 21
+DEBUG:app:{'response': 'Success'}
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:37:25] "GET /stay?type=start&id=Kevin3&guestNum=0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:38:33] "GET /data HTTP/1.1" 200 -
+DEBUG:app:stayStart: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "POST /webhook/11CE24327D5649E0BCC8E79AE3D15D1E HTTP/1.1" 200 21
+DEBUG:app:{'response': 'Success'}
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:38:38] "GET /stay?type=start&id=Kevin3&guestNum=0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:39:23] "GET /data HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:39:31] "GET /data HTTP/1.1" 304 -
+DEBUG:app:stayStart: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "POST /webhook/11CE24327D5649E0BCC8E79AE3D15D1E HTTP/1.1" 200 21
+DEBUG:app:{'response': 'Success'}
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:39:34] "GET /stay?type=start&id=Kevin3&guestNum=0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:40:10] "GET /data HTTP/1.1" 200 -
+DEBUG:app:stayStart: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "POST /webhook/11CE24327D5649E0BCC8E79AE3D15D1E HTTP/1.1" 200 21
+DEBUG:app:{'response': 'Success'}
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:40:13] "GET /stay?type=start&id=Kevin3&guestNum=0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:40:45] "GET /data HTTP/1.1" 200 -
+DEBUG:app:stayStart: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "POST /webhook/11CE24327D5649E0BCC8E79AE3D15D1E HTTP/1.1" 200 21
+DEBUG:app:{'response': 'Success'}
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:40:48] "GET /stay?type=start&id=Kevin3&guestNum=0 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:41:13] "GET /data HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:41:47] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:52:50] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:56:04] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:58:54] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:59:14] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:59:54] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:00:56] "GET /data HTTP/1.1" 304 -
+DEBUG:app:Error: undefined key
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:02:21] "GET /stay?id=Test&guestNum=2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:03:43] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:03:54] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:04:21] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:05:03] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:05:35] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:05:59] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:06:23] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:06:26] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:06:35] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:06:41] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:07:30] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:07:33] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:07:35] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:10:00] "GET /data HTTP/1.1" 304 -
+DEBUG:app:stayAdd: enter
+DEBUG:app:{'response': 'Success'}
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:10:06] "GET /stay?type=add&id=Test&guestNum=2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:10:06] "GET /data HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:10:06] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:10:06] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:14:35] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:15:55] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:16:16] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:16:21] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:16:27] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:16:29] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:17:10] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:17:20] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:17:24] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:17:27] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:18:49] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:19:04] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:19:09] "GET /data HTTP/1.1" 304 -
+DEBUG:app:stayAdd: enter
+DEBUG:app:{'response': 'Success'}
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:19:12] "GET /stay?type=add&id=Test2&guestNum=02 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:19:14] "GET /data HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 03:19:14] "GET /data HTTP/1.1" 304 -
