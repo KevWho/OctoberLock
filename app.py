@@ -240,6 +240,10 @@ def doorbellResponse():
                 eventStr = dateToStr(eventTime, dateFormatMinute)
                 image = cameraImage()
                 numGuests = process(image)
+
+                app.logger.debug("Doorbell motion: time=%s image=%s num:%s" %
+                     (eventStr, image, numGuests))
+
                 for id in data['Airbnb']:
                     startStr = data['Airbnb'][id]['Start_Time']
                     endStr = data['Airbnb'][id]['End_Time']
