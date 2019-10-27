@@ -59,11 +59,6 @@ def info():
     return "OctoberLock backend API"
 
 
-@app.route("/test", methods=["GET"])
-def test():
-    stayAdd('test', 0)
-    return jsonify(success), 200
-
 ########
 # Stay #
 ########
@@ -159,8 +154,8 @@ def stay():
 # Event Handling #
 ##################
 
+# Setup webhook for doorbell
 def cameraStart():
-    # Setup webhook for doorbell
     body = {
       'url': server_url+'/doorbellResponse',
       'clientID': client_id,
@@ -175,12 +170,20 @@ def cameraStart():
         return jsonify(response)
     return jsonify(success)
 
+# Delete webhook for doorbell
 def cameraEnd():
-    # Delete webhook for doorbell
     response = requests.delete(august_rest+'/webhook/doorbell/'+doorbell_id+'/'+client_id, headers=headers).json()
     if not augustSuccess(response):
         return jsonify(response)
     return jsonify(success)
+
+# Return most recent image for doorbell
+def cameraImage():
+    # TODO: Download and store image locally
+    response = requests.get(august_rest+'/doorbells/32cdfb23111f', headers=headers).json()
+    if 'recentImage' in response and 'url' in response['recentImage']:
+        return response['recentImage']['url']
+    return "error"
 
 # Handle lock events
 @app.route("/lockResponse", methods=["POST"])
@@ -201,6 +204,7 @@ def lockResponse():
 #Handle doorbell events
 @app.route("/doorbellResponse", methods=["POST"])
 def doorbellResponse():
+    app.logger.debug('doorbellResponse: enter')
     req = request.json
     if req:
         if 'EventType' in req and req['EventType'] == 'doorbell_video_upload_available':
@@ -210,6 +214,9 @@ def doorbellResponse():
                     return jsonify(failure), 200
 
                 eventTime = dateFromInt(req['startTime'])
+                eventStr = dateToStr(eventTime, dateFormatMinute)
+                image = cameraImage()
+                numGuests = process(image)
                 for id in data['Airbnb']:
                     startStr = data['Airbnb'][id]['Start_Time']
                     endStr = data['Airbnb'][id]['End_Time']
@@ -217,7 +224,9 @@ def doorbellResponse():
                         startTime = dateFromStr(startStr)
                         if (startTime <= eventTime) and (endStr == 'Present' or eventTime <= dateFromStr(endStr)):
                             data['Airbnb'][id]['Entries'].append({
-                                'TimeStamp': dateToStr(eventTime, dateFormatMinute)
+                                'TimeStamp': eventStr,
+                                'NumGuests': numGuests,
+                                'Photo': image,
                                 'dvrID': req['dvrID'] if 'dvrID' in req else 'nan'
                               })
                 writeDataFile(data)
@@ -261,7 +270,7 @@ def data():
 ####################
 
 # Processes jpg from doorbell and return # people entering
-def process():
+def process(imgurl):
     return 0
 
 

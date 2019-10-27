@@ -1377,3 +1377,9 @@ INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 16:34:54] "GET /test?__debugger__=yes&c
 INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 16:34:54] "GET /test?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 16:34:54] "GET /test?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 16:37:13] "GET /test HTTP/1.1" 200 -
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+INFO:werkzeug: * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 676-276-288
