@@ -272,15 +272,10 @@ export default function Dashboard() {
               </Paper>
             </Grid>
             {/* Chart */}
-            <Grid item xs={12} md={8} lg={9}>
+            <Grid item xs={12}>
               <Paper className={fixedHeightPaper}>
+                {/*<img src={"https://olock.kevin-hu.org/plot?id="+stayName} />*/}
                 <Chart />
-              </Paper>
-            </Grid>
-            {/* Recent Deposits */}
-            <Grid item xs={12} md={4} lg={3}>
-              <Paper className={fixedHeightPaper}>
-                <Deposits />
               </Paper>
             </Grid>
             {/* Recent Orders */}
