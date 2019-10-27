@@ -352,16 +352,16 @@ def process(imgurl):
     objects = client.object_localization(
         image=image).localized_object_annotations
 
-    num = len(objects)
-    print('Number of objects found: {}'.format(num))
+    print('Number of objects found: {}'.format(len(objects)))
     boxes = []
     for object_ in objects:
-        boxes.append({
-            'obj': object_.name,
-            'confidence': object_.score,
-            'vertices': [{'x': vertex.x, 'y': vertex.y} for vertex in object_.bounding_poly.normalized_vertices]
-            })
-    return num, boxes
+        if object_.name == "Person":
+            boxes.append({
+                'obj': object_.name,
+                'confidence': object_.score,
+                'vertices': [{'x': vertex.x, 'y': vertex.y} for vertex in object_.bounding_poly.normalized_vertices]
+                })
+    return len(boxes), boxes
 
 
 ##################
