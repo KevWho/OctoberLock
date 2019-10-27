@@ -2569,3 +2569,53 @@ INFO:werkzeug: * Debugger PIN: 214-533-588
 DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/opt/bitnami/apps/OctoberLock/htdocs/flaskenv/local/lib/python3.4/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
 DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0 to DejaVu Sans ('/opt/bitnami/apps/OctoberLock/htdocs/flaskenv/local/lib/python3.4/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
 INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 05:10:21] "GET /plot?id=Kevin3 HTTP/1.1" 200 -
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 129-081-328
+INFO:werkzeug: * Detected change in '/opt/bitnami/apps/OctoberLock/htdocs/visualize_data.py', reloading
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 129-081-328
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 05:34:44] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 05:34:44] "GET /plot?id= HTTP/1.1" 304 -
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/opt/bitnami/apps/OctoberLock/htdocs/flaskenv/local/lib/python3.4/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+DEBUG:matplotlib.font_manager:findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=12.0 to DejaVu Sans ('/opt/bitnami/apps/OctoberLock/htdocs/flaskenv/local/lib/python3.4/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 05:34:45] "GET /plot?id=Kevin3 HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): res.cloudinary.com:80
+DEBUG:urllib3.connectionpool:http://res.cloudinary.com:80 "GET /august-com/image/upload/v1572153668/pbdpin1sfahxcptu4ukw.jpg HTTP/1.1" 200 28100
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 05:34:48] "GET /bounding?id=Kevin3&index=1 HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): res.cloudinary.com:80
+DEBUG:urllib3.connectionpool:http://res.cloudinary.com:80 "GET /august-com/image/upload/v1572153605/jehoxrckvtwlwcdgp64d.jpg HTTP/1.1" 200 27415
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 05:34:57] "GET /bounding?id=Kevin3&index=0 HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): res.cloudinary.com:80
+DEBUG:urllib3.connectionpool:http://res.cloudinary.com:80 "GET /august-com/image/upload/v1572160784/ldofjiuvg4z9ipctxjsp.jpg HTTP/1.1" 200 36458
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 05:35:03] "GET /bounding?id=Kevin3&index=6 HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): res.cloudinary.com:80
+DEBUG:urllib3.connectionpool:http://res.cloudinary.com:80 "GET /august-com/image/upload/v1572154750/qck9tn4zw7tsheqiglt2.jpg HTTP/1.1" 200 22334
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 05:35:09] "GET /bounding?id=Kevin3&index=4 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 06:30:13] "GET / HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): res.cloudinary.com:80
+DEBUG:urllib3.connectionpool:http://res.cloudinary.com:80 "GET /august-com/image/upload/v1572154750/qck9tn4zw7tsheqiglt2.jpg HTTP/1.1" 200 22334
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 06:43:05] "GET /bounding?id=Kevin3&index=4 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 06:43:11] "GET /plot?id=Kevin3 HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): res.cloudinary.com:80
+DEBUG:urllib3.connectionpool:http://res.cloudinary.com:80 "GET /august-com/image/upload/v1572160784/ldofjiuvg4z9ipctxjsp.jpg HTTP/1.1" 200 36458
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 06:43:13] "GET /bounding?id=Kevin3&index=6 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 07:05:57] "GET /plot?id=Kevin3 HTTP/1.1" 200 -
+DEBUG:app:stayEnd: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "DELETE /webhook/11CE24327D5649E0BCC8E79AE3D15D1E/e06433f4-4bd2-40f6-8e73-d00ff7748420 HTTP/1.1" 200 21
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "DELETE /webhook/doorbell/32cdfb23111f/e06433f4-4bd2-40f6-8e73-d00ff7748420 HTTP/1.1" 200 21
+DEBUG:app:{'response': 'Success'}
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 07:05:59] "GET /stay?type=end&id=Kevin3&guestNum=0 HTTP/1.1" 200 -
+DEBUG:app:stayEnd: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "DELETE /webhook/11CE24327D5649E0BCC8E79AE3D15D1E/e06433f4-4bd2-40f6-8e73-d00ff7748420 HTTP/1.1" 200 21
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "DELETE /webhook/doorbell/32cdfb23111f/e06433f4-4bd2-40f6-8e73-d00ff7748420 HTTP/1.1" 200 21
+DEBUG:app:{'response': 'Success'}
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 07:05:59] "GET /stay?type=end&id=Kevin3&guestNum=0 HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): res.cloudinary.com:80
+DEBUG:urllib3.connectionpool:http://res.cloudinary.com:80 "GET /august-com/image/upload/v1572153605/jehoxrckvtwlwcdgp64d.jpg HTTP/1.1" 200 27415
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 07:07:50] "GET /bounding?id=Kevin3&index=0 HTTP/1.1" 200 -
