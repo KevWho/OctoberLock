@@ -6,7 +6,7 @@ import mplcursors
 import pandas as pd
 
 
-with open('mock_data.json') as json_data:
+with open('data.json') as json_data:
     mock = json.load(json_data)
 
 def stay(stay_id):
@@ -86,7 +86,7 @@ def stay(stay_id):
     df = pd.DataFrame(data)
     print(df)
 
-stay("Corey_Hu")
+stay("Kevin3")
 
 
 

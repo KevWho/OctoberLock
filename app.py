@@ -95,7 +95,7 @@ def stayStart(id):
     data = loadDataFile().json
     if data == failure:
         return jsonify(failure)
-    data['Airbnb'][id]['Start_Time'] = nowToStr(dateFormatDay)
+    data['Airbnb'][id]['Start_Time'] = nowToStr(dateFormatMinute)
     writeDataFile(data)
 
     # Setup webhook for lock
@@ -120,7 +120,7 @@ def stayEnd(id):
     data = loadDataFile().json
     if data == failure:
         return jsonify(failure)
-    data['Airbnb'][id]['End_Time'] = nowToStr(dateFormatDay)
+    data['Airbnb'][id]['End_Time'] = nowToStr(dateFormatMinute)
     writeDataFile(data)
 
     # Delete webhook for lock
@@ -262,8 +262,8 @@ def doorbellResponse():
                 startStr = data['Airbnb'][id]['Start_Time']
                 endStr = data['Airbnb'][id]['End_Time']
                 if startStr != 'Present':
-                    startTime = dateFromStr(startStr, dateFormatDay)
-                    if (startTime <= eventTime) and (endStr == 'Present' or eventTime <= dateFromStr(endStr, dateFormatDay)):
+                    startTime = dateFromStr(startStr, dateFormatMinute)
+                    if (startTime <= eventTime) and (endStr == 'Present' or eventTime <= dateFromStr(endStr, dateFormatMinute)):
                         print("To append")
                         data['Airbnb'][id]['Entries'].append({
                             'TimeStamp': eventStr,
@@ -355,9 +355,13 @@ dateFormatDay = "%Y-%m-%d"
 dateFormatMinute = "%Y-%m-%d_%-H:%M"
 
 # Transforms str to date object
-def dateFromStr(dateStr, dateFormat):
+def dateFromStr(dateStr, dateFormat, altFormat=dateFormatDay):
     try:
         return datetime.strptime(dateStr, dateFormat)
+    except:
+        pass
+    try:
+        return datetime.strptime(dateStr, altFormat)
     except:
         return datetime.now()
 
