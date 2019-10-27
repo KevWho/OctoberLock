@@ -2199,3 +2199,166 @@ DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): oauth2.googleapi
 DEBUG:urllib3.connectionpool:https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
 DEBUG:app:Doorbell motion: time=2019-10-27_0:19 image=http://res.cloudinary.com/august-com/image/upload/v1572160784/ldofjiuvg4z9ipctxjsp.jpg num:0
 INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 00:19:46] "POST /doorbellResponse HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/opt/bitnami/apps/OctoberLock/htdocs/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 381-979-517
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 00:35:59] "GET /data HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 00:36:24] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 00:37:22] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 00:37:55] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 00:38:13] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 00:38:22] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:05:18] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:05:38] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:06:50] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:15:10] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:17:04] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:17:25] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:17:28] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:18:11] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:18:57] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:25:15] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:26:05] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:28:35] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:30:46] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:32:26] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:35:09] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:35:34] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:35:50] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:37:08] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:37:52] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:38:24] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:38:58] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:39:16] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:41:58] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:43:40] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:44:07] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:45:11] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:45:19] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:45:20] "GET /data HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:45:51] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:46:21] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:46:39] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:48:00] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:48:20] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:49:42] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:53:30] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:53:37] "GET /data HTTP/1.1" 304 -
+DEBUG:app:Error: no POST data
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:53:48] "POST /stay HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:54:18] "GET /data HTTP/1.1" 304 -
+DEBUG:app:Error: no POST data
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:54:21] "POST /stay HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:54:43] "GET /data HTTP/1.1" 304 -
+DEBUG:app:Error: no POST data
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:54:47] "POST /stay HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:55:12] "GET /data HTTP/1.1" 304 -
+DEBUG:app:Error: no POST data
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:55:15] "POST /stay HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:55:21] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:55:52] "GET /data HTTP/1.1" 304 -
+DEBUG:app:Error: no POST data
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:55:57] "POST /stay HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:56:06] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:56:33] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:56:40] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:56:44] "GET /data HTTP/1.1" 304 -
+DEBUG:app:Error: no POST data
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:56:47] "POST /stay HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:58:04] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:58:09] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:58:12] "OPTIONS /stay HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:58:32] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:58:35] "OPTIONS /stay HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:59:40] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 01:59:42] "OPTIONS /stay HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:00:45] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:00:47] "OPTIONS /stay HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:01:02] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:01:04] "OPTIONS /stay HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:01:14] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:03:57] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:04:00] "OPTIONS /stay HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:04:37] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:04:40] "OPTIONS /stay HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:05:52] "GET /data HTTP/1.1" 304 -
+DEBUG:app:Error: no POST data
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:05:56] "POST /stay HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:07:08] "GET /data HTTP/1.1" 304 -
+DEBUG:app:Error: no POST data
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:07:13] "POST /stay HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:07:37] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:07:45] "GET /data HTTP/1.1" 304 -
+DEBUG:app:Error: no POST data
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:07:47] "POST /stay HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:10:16] "GET /data HTTP/1.1" 304 -
+DEBUG:app:Error: no POST data
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:10:19] "POST /stay HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:12:15] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:12:21] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:12:30] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:12:48] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:12:52] "OPTIONS /stay HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:13:22] "GET /data HTTP/1.1" 304 -
+DEBUG:app:Error: no POST data
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:13:25] "POST /stay HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:14:46] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:14:58] "GET /data HTTP/1.1" 304 -
+DEBUG:app:Error: no POST data
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:15:00] "POST /stay HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:17:29] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:17:31] "OPTIONS /stay HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:18:08] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:18:11] "OPTIONS /stay HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:20:16] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug: * Detected change in '/opt/bitnami/apps/OctoberLock/htdocs/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 381-979-517
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:21:16] "GET /responses HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "GET /users/me HTTP/1.1" 200 284
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "GET /users/locks/mine HTTP/1.1" 200 193
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "GET /doorbells/32cdfb23111f HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:21:19] "GET /debug HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:21:29] "OPTIONS /stay HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/opt/bitnami/apps/OctoberLock/htdocs/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 381-979-517
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "GET /users/me HTTP/1.1" 200 284
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "GET /users/locks/mine HTTP/1.1" 200 193
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "GET /doorbells/32cdfb23111f HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:22:36] "GET /debug HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:22:42] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:22:44] "OPTIONS /stay HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:22:57] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:22:59] "OPTIONS /stay HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:24:02] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:24:06] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:24:08] "OPTIONS /stay HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/opt/bitnami/apps/OctoberLock/htdocs/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 381-979-517
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "GET /users/me HTTP/1.1" 200 284
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "GET /users/locks/mine HTTP/1.1" 200 193
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "GET /doorbells/32cdfb23111f HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:25:30] "GET /debug HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:25:36] "OPTIONS /stay HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:25:40] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 02:25:42] "OPTIONS /stay HTTP/1.1" 200 -

@@ -13,7 +13,8 @@ from datetime import datetime
 
 app = Flask(__name__)
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
-CORS(app)
+app.config['CORS_HEADERS'] = 'Content-Type'
+CORS(app, resources={r"/*": {"origins": "*"}}, headers='Content-Type')
 
 # This information is obtained upon registration of a new OAuth
 # application with August
