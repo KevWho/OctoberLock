@@ -1,4 +1,4 @@
-from flask import Flask, request, redirect, session, url_for, send_from_directory
+from flask import Flask, request, redirect, session, url_for, send_from_directory, Response
 from flask_cors import CORS
 from flask.json import jsonify
 from flask import json
@@ -9,7 +9,10 @@ import urllib
 from urllib.parse import urlparse
 import logging
 import os
+import io
 from datetime import datetime
+from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
+import visualize_data
 
 app = Flask(__name__)
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
@@ -315,6 +318,17 @@ def data():
     if not os.path.exists(data_path):
         initDataFile()
     return send_from_directory('.', data_path, as_attachment=True, cache_timeout=0)
+
+# Serves plot of entries
+@app.route("/plot", methods=["GET"])
+def plot():
+    req = request.args
+    if not req or 'id' not in req:
+        return jsonify(failure)
+    fig = visualize_data.stay(req['id'])
+    output = io.BytesIO()
+    FigureCanvas(fig).print_png(output)
+    return Response(output.getvalue(), mimetype='image/png')
 
 
 ####################
