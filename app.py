@@ -8,6 +8,7 @@ import urllib
 from urllib.parse import urlparse
 import logging
 import os
+from datetime import datetime
 
 app = Flask(__name__, static_url_path='')
 
@@ -75,7 +76,7 @@ def stayStart(id):
     data = loadDataFile().json
     if data == failure:
         return jsonify(failure)
-    data['Airbnb'][id]['Start_Time'] = '2019' # TODO: Fixme
+    data['Airbnb'][id]['Start_Time'] = nowToStr(dateFormatDay)
     writeDataFile(data)
 
     # Setup webhook for lock
@@ -100,7 +101,7 @@ def stayEnd(id):
     data = loadDataFile().json
     if data == failure:
         return jsonify(failure)
-    data['Airbnb'][id]['End_Time'] = '2019' # TODO: Fixme
+    data['Airbnb'][id]['End_Time'] = nowToStr(dateFormatDay)
     writeDataFile(data)
 
     # Delete webhook for lock
@@ -200,7 +201,27 @@ def lockResponse():
 #Handle doorbell events
 @app.route("/doorbellResponse", methods=["POST"])
 def doorbellResponse():
-    pass
+    req = request.json
+    if req:
+        if 'EventType' in req and req['EventType'] == 'doorbell_video_upload_available':
+            if 'startTime' in req:
+                data = loadDataFile().json
+                if data == failure:
+                    return jsonify(failure), 200
+
+                eventTime = dateFromInt(req['startTime'])
+                for id in data['Airbnb']:
+                    startStr = data['Airbnb'][id]['Start_Time']
+                    endStr = data['Airbnb'][id]['End_Time']
+                    if startStr != 'Present':
+                        startTime = dateFromStr(startStr)
+                        if (startTime <= eventTime) and (endStr == 'Present' or eventTime <= dateFromStr(endStr)):
+                            data['Airbnb'][id]['Entries'].append({
+                                'TimeStamp': dateToStr(eventTime, dateFormatMinute)
+                                'dvrID': req['dvrID'] if 'dvrID' in req else 'nan'
+                              })
+                writeDataFile(data)
+    return jsonify(success), 200
 
 
 ##################
@@ -242,6 +263,34 @@ def data():
 # Processes jpg from doorbell and return # people entering
 def process():
     return 0
+
+
+##################
+# Datetime Utils #
+##################
+
+# Predefined date formats
+dateFormatDay = "%Y-%m-%d"
+dateFormatMinute = "%Y-%m-%d_%-H:%M"
+
+# Transforms str to date object
+def dateFromStr(dateStr, dateFormat):
+    try:
+        return datetime.strptime(dateStr, dateFormat)
+    except:
+        return datetime.now()
+
+# Transforms UNIX timestamp (milliseconds) to date object
+def dateFromInt(timestamp):
+    return datetime.fromtimestamp(timestamp // 1000)
+
+# Returns now as a formatted str
+def nowToStr(dateFormat):
+    return dateToStr(datetime.now(), dateFormat)
+
+# Returns now as a formatted str
+def dateToStr(date, dateFormat):
+    return date.strftime(dateFormat)
 
 
 #######
