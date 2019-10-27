@@ -114,8 +114,7 @@ def bounding(stay_id, entryNum):
             rect = patches.Polygon(vertices,linewidth=1,edgecolor='r',facecolor='none')
             # Add the patch to the Axes
             ax.add_patch(rect)
-
-    plt.show()
+    return fig
 
 #bounding('Kevin3', 4)
 #stay("Kevin3")

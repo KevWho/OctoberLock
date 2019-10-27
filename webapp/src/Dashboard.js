@@ -111,7 +111,7 @@ const useStyles = makeStyles(theme => ({
     flexDirection: 'column',
   },
   fixedHeight: {
-    height: 240,
+    height: 550,
   },
 }));
 
@@ -274,8 +274,8 @@ export default function Dashboard() {
             {/* Chart */}
             <Grid item xs={12}>
               <Paper className={fixedHeightPaper}>
-                {/*<img src={"https://olock.kevin-hu.org/plot?id="+stayName} />*/}
-                <Chart />
+                <img src={"https://olock.kevin-hu.org/plot?id="+stayName} />
+                {/*<Chart />*/}
               </Paper>
             </Grid>
             {/* Recent Orders */}

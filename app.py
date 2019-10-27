@@ -332,6 +332,17 @@ def plot():
     FigureCanvas(fig).print_png(output)
     return Response(output.getvalue(), mimetype='image/png')
 
+# Serves plot of boundings
+@app.route("/bounding", methods=["GET"])
+def bounding():
+    req = request.args
+    if not req or 'id' not in req or 'index' not in req:
+        return jsonify(failure)
+    fig = visualize_data.bounding(req['id'], req['index'])
+    output = io.BytesIO()
+    FigureCanvas(fig).print_png(output)
+    return Response(output.getvalue(), mimetype='image/png')
+
 
 ####################
 # Image Processing #
