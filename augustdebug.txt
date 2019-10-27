@@ -1383,3 +1383,75 @@ INFO:werkzeug: * Restarting with stat
 DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 676-276-288
+DEBUG:augustoauth:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907 api_secret=secret auth_callback=https://partners.august.com/oauthtest/cb auth_route=/oauthtest/cb debug_step=4
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 163-530-465
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 17:35:44] "GET / HTTP/1.1" 302 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 17:36:21] "GET /stay HTTP/1.1" 404 -
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 17:37:22] "GET /stay HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 17:37:22] "GET /stay HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 17:37:23] "GET /stay HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 17:37:24] "GET /stay HTTP/1.1" 404 -
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 17:38:25] "GET /stay HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 17:38:25] "GET /stay HTTP/1.1" 404 -
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+INFO:werkzeug: * Running on http://0.0.0.0:8888/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 381-979-517
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 17:41:29] "GET /stay HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 17:41:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 17:42:26] "GET /data.json HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 17:43:18] "POST /webhookResponse HTTP/1.1" 405 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 17:45:20] "GET /data.json HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 17:58:18] "POST /stay HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 17:58:22] "GET /data.json HTTP/1.1" 200 -
+DEBUG:app:stayStart: enter
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "POST /webhook/11CE24327D5649E0BCC8E79AE3D15D1E HTTP/1.1" 200 21
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:04:38] "POST /stay HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:04:43] "GET /data.json HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:05:10] "POST /webhookResponse HTTP/1.1" 405 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:05:19] "GET /data.json HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:05:20] "POST /lockResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:05:21] "GET /data.json HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:05:22] "GET /data.json HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:05:24] "GET /data.json HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:05:29] "GET /data.json HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:05:30] "GET /data.json HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:05:31] "GET /data.json HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:05:31] "GET /data.json HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:05:32] "GET /data.json HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:05:32] "GET /data.json HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:05:33] "GET /data.json HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:05:33] "GET /data.json HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:05:34] "GET /data.json HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:05:38] "GET /data.json HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:06:12] "GET /data.json HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:06:13] "GET /data.json HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:06:40] "POST /webhookResponse HTTP/1.1" 405 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:07:19] "GET /data.json HTTP/1.1" 304 -
+INFO:werkzeug: * Detected change in '/opt/bitnami/apps/OctoberLock/htdocs/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 381-979-517
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:09:21] "GET /data.json HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:09:22] "POST /webhookResponse HTTP/1.1" 405 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:09:23] "GET /data.json HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:09:49] "GET /data.json HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:09:52] "GET /responses HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:09:52] "GET /responses?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:09:53] "GET /responses?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:09:53] "GET /responses?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:09:53] "GET /responses?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:09:53] "GET /responses?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/opt/bitnami/apps/OctoberLock/htdocs/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 381-979-517

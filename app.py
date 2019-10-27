@@ -243,7 +243,7 @@ def doorbellResponse():
 # Return all responses
 @app.route("/responses", methods=["GET"])
 def responses():
-    return jsonify(webhookResponses)
+    return jsonify(responses)
 
 
 ##################
