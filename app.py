@@ -267,12 +267,15 @@ def doorbellResponse():
 
             data = loadDataFile().json
             if data == failure:
+                print("Failed loading json file")
                 return jsonify(failure), 200
+            print("Loaded jon file")
             for id in data['Airbnb']:
                 startStr = data['Airbnb'][id]['Start_Time']
                 endStr = data['Airbnb'][id]['End_Time']
                 if startStr != 'Present':
                     startTime = dateFromStr(startStr, dateFormatMinute)
+                    print("Starttime", startTime)
                     if (startTime <= eventTime) and (endStr == 'Present' or eventTime <= dateFromStr(endStr, dateFormatMinute)):
                         print("To append")
                         data['Airbnb'][id]['Entries'].append({
