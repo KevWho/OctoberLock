@@ -242,6 +242,7 @@ def doorbellResponse():
 
                 data = loadDataFile().json
                 if data == failure:
+                    print("Failure", data)
                     return jsonify(failure), 200
                 for id in data['Airbnb']:
                     print(id)
