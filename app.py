@@ -1,4 +1,5 @@
 from flask import Flask, request, redirect, session, url_for, send_from_directory
+from flask_cors import CORS
 from flask.json import jsonify
 from flask import json
 from pprint import pformat
@@ -12,6 +13,7 @@ from datetime import datetime
 
 app = Flask(__name__)
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
+CORS(app)
 
 # This information is obtained upon registration of a new OAuth
 # application with August

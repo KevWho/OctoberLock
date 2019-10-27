@@ -2111,3 +2111,84 @@ DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): oauth2.googleapi
 DEBUG:urllib3.connectionpool:https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
 DEBUG:app:Doorbell motion: time=2019-10-26_22:26 image=http://res.cloudinary.com/august-com/image/upload/v1572154010/r1pgrrxuzgbcfxohidku.jpg num:3
 INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 22:26:51] "POST /doorbellResponse HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/opt/bitnami/apps/OctoberLock/htdocs/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 381-979-517
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 22:31:20] "GET /data HTTP/1.1" 200 -
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 22:31:24] "GET /responses HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 22:31:46] "GET /responses HTTP/1.1" 200 -
+DEBUG:app:doorbellResponse: enter
+DEBUG:google.auth.transport.requests:Making request: POST https://oauth2.googleapis.com/token
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): oauth2.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+DEBUG:app:Doorbell motion: time=2019-10-26_22:31 image=http://res.cloudinary.com/august-com/image/upload/v1572154305/kqm3jnjsuf1hzaurx7fp.jpg num:2
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 22:31:47] "POST /doorbellResponse HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "GET /users/me HTTP/1.1" 200 284
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "GET /users/locks/mine HTTP/1.1" 200 193
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "GET /doorbells/32cdfb23111f HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 22:31:49] "GET /debug HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 22:36:23] "GET /responses HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 22:36:25] "GET /responses HTTP/1.1" 200 -
+DEBUG:app:doorbellResponse: enter
+DEBUG:google.auth.transport.requests:Making request: POST https://oauth2.googleapis.com/token
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): oauth2.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+DEBUG:app:Doorbell motion: time=2019-10-26_22:36 image=http://res.cloudinary.com/august-com/image/upload/v1572154587/uypccvwcckml8t3r2sdu.jpg num:1
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 22:36:28] "POST /doorbellResponse HTTP/1.1" 500 -
+DEBUG:app:doorbellResponse: enter
+DEBUG:google.auth.transport.requests:Making request: POST https://oauth2.googleapis.com/token
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): oauth2.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+DEBUG:app:Doorbell motion: time=2019-10-26_22:39 image=http://res.cloudinary.com/august-com/image/upload/v1572154750/qck9tn4zw7tsheqiglt2.jpg num:2
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 22:39:11] "POST /doorbellResponse HTTP/1.1" 200 -
+DEBUG:app:doorbellResponse: enter
+DEBUG:google.auth.transport.requests:Making request: POST https://oauth2.googleapis.com/token
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): oauth2.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+DEBUG:app:Doorbell motion: time=2019-10-26_22:40 image=http://res.cloudinary.com/august-com/image/upload/v1572154843/rzbynpckbli9aikih7lq.jpg num:1
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 22:40:44] "POST /doorbellResponse HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 22:46:22] "GET /responses HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "GET /users/me HTTP/1.1" 200 284
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "GET /users/locks/mine HTTP/1.1" 200 193
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "GET /doorbells/32cdfb23111f HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 22:46:27] "GET /debug HTTP/1.1" 200 -
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api-production.august.com:443
+DEBUG:urllib3.connectionpool:https://api-production.august.com:443 "POST /webhook/doorbell/32cdfb23111f HTTP/1.1" 200 21
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 22:57:41] "POST /lockResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 23:24:32] "GET /responses HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 23:52:49] "GET /data HTTP/1.1" 200 -
+DEBUG:app:doorbellResponse: enter
+DEBUG:google.auth.transport.requests:Making request: POST https://oauth2.googleapis.com/token
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): oauth2.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+DEBUG:app:Doorbell motion: time=2019-10-26_23:59 image=http://res.cloudinary.com/august-com/image/upload/v1572159544/zt0o96wv4eskwk8y2mf5.jpg num:2
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 23:59:05] "POST /doorbellResponse HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/opt/bitnami/apps/OctoberLock/htdocs/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 381-979-517
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 00:04:26] "GET /responses HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 00:04:53] "GET /data HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 00:05:58] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 00:06:45] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 00:06:52] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 00:07:09] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 00:07:17] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 00:08:09] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 00:08:59] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 00:09:04] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 00:09:42] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 00:13:53] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 00:13:59] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 00:14:11] "GET /data HTTP/1.1" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 00:14:46] "GET /data HTTP/1.1" 304 -
