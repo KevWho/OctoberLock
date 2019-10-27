@@ -1,78 +1,134 @@
 {"Airbnb":
   { "Corey_Hu" : {
-      "Start_Time": "2019-04-24",
-      "End_Time": "2019-04-29",
+      "Start_Time": "2019-04-24_08:00",
+      "End_Time": "2019-04-26_13:00",
       "Tot_Guests": 4,
       "Entries": [ {
-          "TimeStamp" : "2019-04-24 13:00",
+          "TimeStamp" : "2019-04-24_09:00",
           "NumGuests" : 5,
-          "Photo": "url"
+          "Photo": "http://res.cloudinary.com/august-com/image/upload/v1572139920/ipvlqv7lwom4yv7lgbcg.jpg"
       }, {
-        "TimeStamp" : "2019-04-25 11:00",
+        "TimeStamp" : "2019-04-24_11:00",
           "NumGuests" : 3,
-          "Photo": "url"
+          "Photo": "url2"
       }, {
-        "TimeStamp" : "2019-04-26 1:00",
+        "TimeStamp" : "2019-04-24_11:04",
           "NumGuests" : 2,
-          "Photo": "url"
+          "Photo": "url3"
       }, {
-        "TimeStamp" : "2019-04-27 13:43",
+        "TimeStamp" : "2019-04-24_13:43",
           "NumGuests" : 1,
-          "Photo": "url"
+          "Photo": "url4"
       }, {
-        "TimeStamp" : "2019-04-29 19:00",
-          "NumGuests" : 9,
-          "Photo": "url"
+        "TimeStamp" : "2019-04-24_14:45",
+          "NumGuests" : 5,
+          "Photo": "url5"
+      }, {
+        "TimeStamp" : "2019-04-24_16:33",
+          "NumGuests" : 3,
+          "Photo": "url6"
+      }, {
+        "TimeStamp" : "2019-04-24_19:00",
+          "NumGuests" : 4,
+          "Photo": "url7"
+      }, {
+        "TimeStamp" : "2019-04-24_19:56",
+          "NumGuests" : 3,
+          "Photo": "url8"
+      }, {
+        "TimeStamp" : "2019-04-24_21:23",
+          "NumGuests" : 2,
+          "Photo": "url9"
+      }, {
+        "TimeStamp" : "2019-04-24_23:31",
+          "NumGuests" : 3,
+          "Photo": "url10"
+      }, {
+        "TimeStamp" : "2019-04-25_07:31",
+          "NumGuests" : 4,
+          "Photo": "url11"
+      }, {
+        "TimeStamp" : "2019-04-25_09:31",
+          "NumGuests" : 4,
+          "Photo": "url12"
+      }, {
+        "TimeStamp" : "2019-04-25_10:31",
+          "NumGuests" : 3,
+          "Photo": "url2"
+      }, {
+        "TimeStamp" : "2019-04-25_13:10",
+          "NumGuests" : 6,
+          "Photo": "url13"
+      }, {
+        "TimeStamp" : "2019-04-25_13:31",
+          "NumGuests" : 3,
+          "Photo": "url14"
+      }, {
+        "TimeStamp" : "2019-04-25_19:21",
+          "NumGuests" : 2,
+          "Photo": "url15"
+      }, {
+        "TimeStamp" : "2019-04-26_09:01",
+          "NumGuests" : 3,
+          "Photo": "url16"
+      }, {
+        "TimeStamp" : "2019-04-26_10:51",
+          "NumGuests" : 1,
+          "Photo": "url17"
+      }, {
+        "TimeStamp" : "2019-04-26_11:21",
+          "NumGuests" : 4,
+          "Photo": "url18"
       }
-    ]
+      ]
   }, "Kevin_Hu" : {
-    "Start_Time": "2019-05-24",
-    "End_Time": "2019-05-27",
+    "Start_Time": "2019-05-24_12:00",
+    "End_Time": "2019-05-27:_03:00",
     "Tot_Guests": 9,
     "Entries": [ {
-        "TimeStamp" : "2019-05-24 8:27",
+        "TimeStamp" : "2019-05-24_08:27",
         "NumGuests" : 5,
         "Photo": "url"
     }, {
-      "TimeStamp" : "2019-05-24 14:27",
+      "TimeStamp" : "2019-05-24_14:27",
         "NumGuests" : 10,
         "Photo": "url"
     }, {
-      "TimeStamp" : "2019-05-24 18:27",
+      "TimeStamp" : "2019-05-24_18:27",
         "NumGuests" : 7,
         "Photo": "url"
     }, {
-      "TimeStamp" : "2019-05-26 20:27",
+      "TimeStamp" : "2019-05-26_20:27",
         "NumGuests" : 3,
         "Photo": "url"
     }, {
-      "TimeStamp" : "2019-05-27 7:27",
+      "TimeStamp" : "2019-05-27_07:27",
         "NumGuests" : 7,
         "Photo": "url"
     }
   ]
 }, "John_Doe" : {
-    "Start_Time": "2019-06-02",
-    "End_Time": "2019-06-03",
+    "Start_Time": "2019-06-02_05:00",
+    "End_Time": "2019-06-03_19:00",
     "Tot_Guests": 3,
     "Entries": [ {
-        "TimeStamp" : "2019-06-02 13:00",
+        "TimeStamp" : "2019-06-02_13:00",
         "NumGuests" :2,
         "Photo": "url"
     }, {
-      "TimeStamp" : "2019-06-02 15:00",
+      "TimeStamp" : "2019-06-02_15:00",
         "NumGuests" : 3,
         "Photo": "url"
     }, {
-      "TimeStamp" : "2019-06-02 16:00",
+      "TimeStamp" : "2019-06-02_16:00",
         "NumGuests" : 4,
         "Photo": "url"
     }, {
-      "TimeStamp" : "2019-06-02 17:00",
+      "TimeStamp" : "2019-06-02_17:00",
         "NumGuests" : 5,
         "Photo": "url"
     }, {
-      "TimeStamp" : "2019-06-02 19:00",
+      "TimeStamp" : "2019-06-02_19:00",
         "NumGuests" : 3,
         "Photo": "url"
     }
