@@ -54,6 +54,7 @@ server_url = 'https://olock.kevin-hu.org'
 # Data filepath
 data_path = 'data.json'
 image_path = 'temp_img.jpg'
+bad_imge_path = 'bad-image.png'
 
 # Constants
 success = {'response': 'Success'}
@@ -324,24 +325,30 @@ def data():
 # Serves plot of entries
 @app.route("/plot", methods=["GET"])
 def plot():
-    req = request.args
-    if not req or 'id' not in req:
-        return jsonify(failure)
-    fig = visualize_data.stay(req['id'])
-    output = io.BytesIO()
-    FigureCanvas(fig).print_png(output)
-    return Response(output.getvalue(), mimetype='image/png')
+    try:
+        req = request.args
+        if not req or 'id' not in req:
+            return jsonify(failure)
+        fig = visualize_data.stay(req['id'])
+        output = io.BytesIO()
+        FigureCanvas(fig).print_png(output)
+        return Response(output.getvalue(), mimetype='image/png')
+    except:
+        return send_from_directory('.', bad_imge_path, as_attachment=True, cache_timeout=0, mimetype='image/png')
 
 # Serves plot of boundings
 @app.route("/bounding", methods=["GET"])
 def bounding():
-    req = request.args
-    if not req or 'id' not in req or 'index' not in req:
-        return jsonify(failure)
-    fig = visualize_data.bounding(req['id'], req['index'])
-    output = io.BytesIO()
-    FigureCanvas(fig).print_png(output)
-    return Response(output.getvalue(), mimetype='image/png')
+    try:
+        req = request.args
+        if not req or 'id' not in req or 'index' not in req:
+            return jsonify(failure)
+        fig = visualize_data.bounding(req['id'], req['index'])
+        output = io.BytesIO()
+        FigureCanvas(fig).print_png(output)
+        return Response(output.getvalue(), mimetype='image/png')
+    except:
+        return send_from_directory('.', bad_imge_path, as_attachment=True, cache_timeout=0, mimetype='image/png')
 
 
 ####################
