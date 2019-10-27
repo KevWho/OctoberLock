@@ -248,8 +248,8 @@ def doorbellResponse():
                     startStr = data['Airbnb'][id]['Start_Time']
                     endStr = data['Airbnb'][id]['End_Time']
                     if startStr != 'Present':
-                        startTime = dateFromStr(startStr)
-                        if (startTime <= eventTime) and (endStr == 'Present' or eventTime <= dateFromStr(endStr)):
+                        startTime = dateFromStr(startStr, dateFormatDay)
+                        if (startTime <= eventTime) and (endStr == 'Present' or eventTime <= dateFromStr(endStr, dateFormatDay)):
                             data['Airbnb'][id]['Entries'].append({
                                 'TimeStamp': eventStr,
                                 'NumGuests': numGuests,
