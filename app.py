@@ -61,6 +61,11 @@ def debug():
     myinfo['doorbell']=returnjson.json()
     return jsonify(myinfo)
 
+# Log
+@app.route("/log", methods=["GET"])
+def debug():
+    return send_from_directory('.', 'augustdebug.txt', as_attachment=True, cache_timeout=0)
+
 # Check response.json() matches {'message': 'success'}
 def augustSuccess(response):
     return ('message' in response and response['message'] == 'success')
@@ -125,6 +130,8 @@ def stayEnd(id):
     return cameraEnd()
 
 def stayAdd(id, guestNum):
+    app.logger.debug('stayAdd: enter')
+
     data = loadDataFile().json
     if data == failure:
         return jsonify(failure)
@@ -146,24 +153,30 @@ def stay():
     data = success
     req = request.json
     if not req:
+        app.logger.debug('Error: no POST data')
         return jsonify({'response': 'Error', 'msg': 'no POST data'}), 200
     for key in ['type', 'id', 'guestNum']:
         if key not in req:
+            app.logger.debug('Error: undefined key')
             return jsonify({'response': 'Error', 'msg': key+' undefined'}), 200
     if req['type'] == 'start':
         returnjson = stayStart(req['id'])
         if returnjson.json != success:
+            app.logger.debug('Error: ' + str(returnjson.json))
             return returnjson
     elif req['type'] == 'end':
         returnjson = stayEnd(req['id'])
         if returnjson.json != success:
+            app.logger.debug('Error: ' + str(returnjson.json))
             return returnjson
     elif req['type'] == 'add':
         returnjson = stayAdd(req['id'], req['guestNum'])
         if returnjson.json != success:
+            app.logger.debug('Error: ' + str(returnjson.json))
             return returnjson
     else:
         data = {'response': 'Error', 'msg': 'type must be "start" or "end" or "add"'}
+    app.logger.debug(str(data))
     return jsonify(data), 200
 
 
