@@ -326,7 +326,7 @@ def process(imgurl):
         boxes.append({
             'obj': object_.name,
             'confidence': object_.score,
-            'vertices' = [{'x': vertex.x, 'y': vertex.y} for vertex in object_.bounding_poly.normalized_vertices]
+            'vertices': [{'x': vertex.x, 'y': vertex.y} for vertex in object_.bounding_poly.normalized_vertices]
             })
     return num, boxes
 
