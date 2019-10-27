@@ -1,3 +1,49 @@
 DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 324-130-422
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:33:01] "GET /responses HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:34:39] "GET /responses HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:34:39] "GET /responses HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:34:43] "GET /responses HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:34:44] "GET /responses HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:34:44] "GET /responses HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:34:45] "GET /responses HTTP/1.1" 200 -
+DEBUG:app:doorbellResponse: enter
+DEBUG:google.auth.transport.requests:Making request: POST https://oauth2.googleapis.com/token
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): oauth2.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+DEBUG:app:Doorbell motion: time=2019-10-27_08:34 image=http://res.cloudinary.com/august-com/image/upload/v1572190487/eyz5y7ffp4j9dmgpjtby.jpg num:1
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:34:48] "POST /doorbellResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:34:53] "GET /responses HTTP/1.1" 200 -
+DEBUG:app:doorbellResponse: enter
+DEBUG:google.auth.transport.requests:Making request: POST https://oauth2.googleapis.com/token
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): oauth2.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+DEBUG:app:Doorbell motion: time=2019-10-27_08:36 image=http://res.cloudinary.com/august-com/image/upload/v1572190600/ofxngsrgwhngi814ngil.jpg num:0
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:36:41] "POST /doorbellResponse HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/opt/bitnami/apps/OctoberLock/htdocs/app.py', reloading
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 324-130-422
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:37:44] "GET /responses HTTP/1.1" 200 -
+DEBUG:app:doorbellResponse: enter
+DEBUG:google.auth.transport.requests:Making request: POST https://oauth2.googleapis.com/token
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): oauth2.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+DEBUG:app:Doorbell motion: time=2019-10-27_08:37 image=http://res.cloudinary.com/august-com/image/upload/v1572190663/ehugktpzk1jliin8jrzl.jpg num:0
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:37:44] "POST /doorbellResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:37:45] "GET /responses HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:39:15] "GET /responses HTTP/1.1" 200 -
+DEBUG:app:doorbellResponse: enter
+DEBUG:google.auth.transport.requests:Making request: POST https://oauth2.googleapis.com/token
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): oauth2.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:39:26] "GET /responses HTTP/1.1" 200 -
+DEBUG:app:Doorbell motion: time=2019-10-27_08:39 image=http://res.cloudinary.com/august-com/image/upload/v1572190765/cozkr5depcuab3lqgngn.jpg num:0
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:39:26] "POST /doorbellResponse HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:39:26] "GET /responses HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:40:16] "GET /responses HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Oct/2019 08:40:26] "GET /data HTTP/1.1" 200 -
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
