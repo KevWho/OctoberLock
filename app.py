@@ -297,7 +297,7 @@ def writeDataFile(data):
 def data():
     if not os.path.exists(data_path):
         initDataFile()
-    return send_from_directory('.', data_path, cache_timeout=0)
+    return send_from_directory('.', data_path, as_attachment=True, cache_timeout=0)
 
 
 ####################
