@@ -225,7 +225,7 @@ def lockResponse():
 
     req = request.json
     if req:
-        if 'EventType' in req and req['EventType'] == 'status':
+        if 'EventType' in req and (req['EventType'] == 'status' or req['EventType'] == 'operation'):
             if 'Event' in req and req['Event'] == 'unlock':
                 returnjson = cameraStart()
                 if returnjson.json != success:
