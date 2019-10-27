@@ -244,17 +244,20 @@ def doorbellResponse():
                 if data == failure:
                     return jsonify(failure), 200
                 for id in data['Airbnb']:
+                    print(id)
                     startStr = data['Airbnb'][id]['Start_Time']
                     endStr = data['Airbnb'][id]['End_Time']
                     if startStr != 'Present':
                         startTime = dateFromStr(startStr, dateFormatDay)
                         if (startTime <= eventTime) and (endStr == 'Present' or eventTime <= dateFromStr(endStr, dateFormatDay)):
+                            print("To append")
                             data['Airbnb'][id]['Entries'].append({
                                 'TimeStamp': eventStr,
                                 'NumGuests': numGuests,
                                 'Photo': image,
                                 'dvrID': req['dvrID'] if 'dvrID' in req else 'nan'
                               })
+                print(data)
                 writeDataFile(data)
     return jsonify(success), 200
 
