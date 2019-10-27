@@ -1,10 +1,12 @@
 import json
+import matplotlib
 import matplotlib.pyplot as plt
 import datetime
 from datetime import datetime, date, timedelta
 import mplcursors
 import pandas as pd
 
+matplotlib.use('Agg')
 
 with open('data.json') as json_data:
     mock = json.load(json_data)
