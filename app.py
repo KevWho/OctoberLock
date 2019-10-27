@@ -44,7 +44,7 @@ headers = {'x-august-api-key': api_key,
 server_url = 'https://olock.kevin-hu.org'
 
 # Data filepath
-data_path = 'static/data.json'
+data_path = 'data.json'
 image_path = 'temp_img.jpg'
 
 # Constants
