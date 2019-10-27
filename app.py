@@ -50,6 +50,16 @@ image_path = 'temp_img.jpg'
 success = {'response': 'Success'}
 failure = {'response': 'Failure'}
 
+# Debug
+@app.route("/debug", methods=["GET"])
+def debug():
+    myinfo=requests.get(august_rest+'/users/me', headers=headers).json()
+    returnjson=requests.get(august_rest+'/users/locks/mine', headers=headers)
+    myinfo['locks']=returnjson.json()
+    returnjson=requests.get(august_rest+'/doorbells/'+doorbell_id, headers=headers)
+    myinfo['doorbell']=returnjson.json()
+    return jsonify(myinfo)
+
 # Check response.json() matches {'message': 'success'}
 def augustSuccess(response):
     return ('message' in response and response['message'] == 'success')
@@ -63,6 +73,11 @@ def info():
 ########
 # Stay #
 ########
+
+# TODO: Fix errors:
+#   - check if id in dict
+#   - don't start if ended
+#   - only one stay at a time
 
 def stayStart(id):
     app.logger.debug('stayStart: enter')
