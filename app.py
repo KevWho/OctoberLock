@@ -10,7 +10,7 @@ import logging
 import os
 from datetime import datetime
 
-app = Flask(__name__, static_folder='static')
+app = Flask(__name__)
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
 # This information is obtained upon registration of a new OAuth
@@ -304,7 +304,7 @@ def writeDataFile(data):
     f.close()
 
 # Serves data file
-@app.route("/data.json", methods=["GET"])
+@app.route("/data", methods=["GET"])
 def data():
     if not os.path.exists(data_path):
         initDataFile()
