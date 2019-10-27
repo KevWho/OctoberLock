@@ -155,6 +155,9 @@ def stay():
 # Event Handling #
 ##################
 
+# Debug purposes
+responses = []
+
 # Setup webhook for doorbell
 def cameraStart():
     body = {
@@ -189,6 +192,8 @@ def cameraImage():
 # Handle lock events
 @app.route("/lockResponse", methods=["POST"])
 def lockResponse():
+    responses.append(request.json)
+
     req = request.json
     if req:
         if 'EventType' in req and req['EventType'] == 'status':
@@ -205,6 +210,8 @@ def lockResponse():
 #Handle doorbell events
 @app.route("/doorbellResponse", methods=["POST"])
 def doorbellResponse():
+    responses.append(request.json)
+
     app.logger.debug('doorbellResponse: enter')
     req = request.json
     if req:
@@ -232,6 +239,11 @@ def doorbellResponse():
                               })
                 writeDataFile(data)
     return jsonify(success), 200
+
+# Return all responses
+@app.route("/responses", methods=["GET"])
+def responses():
+    return jsonify(webhookResponses)
 
 
 ##################
