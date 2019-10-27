@@ -182,7 +182,7 @@ def cameraStart():
       'header': "augustHeader",
       'token': "doorbellSecret",
       'method': "POST",
-      'notificationTypes': ['videoavailable']
+      'notificationTypes': ['motiondetected']
     }
 
     response = requests.post(august_rest+'/webhook/doorbell/'+doorbell_id, headers=headers, json=body).json()
@@ -231,37 +231,33 @@ def doorbellResponse():
     app.logger.debug('doorbellResponse: enter')
     req = request.json
     if req:
-        if 'EventType' in req and req['EventType'] == 'doorbell_video_upload_available':
-            if 'startTime' in req:
-                eventTime = dateFromInt(req['startTime'])
-                eventStr = dateToStr(eventTime, dateFormatMinute)
-                image = cameraImage()
-                numGuests, boxes = process(image)
+        if 'EventType' in req and req['EventType'] == 'doorbell_motion_detected':
+            eventTime = datetime.now()
+            eventStr = dateToStr(eventTime, dateFormatMinute)
+            image = req['Url'] if 'Url' in req else cameraImage()
+            numGuests, boxes = process(image)
 
-                app.logger.debug("Doorbell motion: time=%s image=%s num:%s" %
-                     (eventStr, image, numGuests))
+            app.logger.debug("Doorbell motion: time=%s image=%s num:%s" %
+                 (eventStr, image, numGuests))
 
-                data = loadDataFile().json
-                if data == failure:
-                    print("Failure", data)
-                    return jsonify(failure), 200
-                for id in data['Airbnb']:
-                    print(id)
-                    startStr = data['Airbnb'][id]['Start_Time']
-                    endStr = data['Airbnb'][id]['End_Time']
-                    if startStr != 'Present':
-                        startTime = dateFromStr(startStr, dateFormatDay)
-                        if (startTime <= eventTime) and (endStr == 'Present' or eventTime <= dateFromStr(endStr, dateFormatDay)):
-                            print("To append")
-                            data['Airbnb'][id]['Entries'].append({
-                                'TimeStamp': eventStr,
-                                'NumGuests': numGuests,
-                                'Boxes': boxes,
-                                'Photo': image,
-                                'dvrID': req['dvrID'] if 'dvrID' in req else 'nan'
-                              })
-                print(data)
-                writeDataFile(data)
+            data = loadDataFile().json
+            if data == failure:
+                return jsonify(failure), 200
+            for id in data['Airbnb']:
+                startStr = data['Airbnb'][id]['Start_Time']
+                endStr = data['Airbnb'][id]['End_Time']
+                if startStr != 'Present':
+                    startTime = dateFromStr(startStr, dateFormatDay)
+                    if (startTime <= eventTime) and (endStr == 'Present' or eventTime <= dateFromStr(endStr, dateFormatDay)):
+                        print("To append")
+                        data['Airbnb'][id]['Entries'].append({
+                            'TimeStamp': eventStr,
+                            'NumGuests': numGuests,
+                            'Boxes': boxes,
+                            'Photo': image,
+                          })
+            print(data)
+            writeDataFile(data)
     return jsonify(success), 200
 
 # Return all responses
