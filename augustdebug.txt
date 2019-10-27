@@ -1455,3 +1455,12 @@ INFO:werkzeug: * Restarting with stat
 DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 381-979-517
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:10:57] "GET /responses HTTP/1.1" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:10:58] "GET /responses?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:10:58] "GET /responses?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Oct/2019 18:10:58] "GET /responses?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/opt/bitnami/apps/OctoberLock/htdocs/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+DEBUG:app:Startup variables: client_id=e06433f4-4bd2-40f6-8e73-d00ff7748420 api_key=b88ca079-20c7-407d-97f8-d065eeb87907
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 381-979-517

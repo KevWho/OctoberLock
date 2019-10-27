@@ -242,7 +242,7 @@ def doorbellResponse():
 
 # Return all responses
 @app.route("/responses", methods=["GET"])
-def responses():
+def responsesPrint():
     return jsonify(responses)
 
 
